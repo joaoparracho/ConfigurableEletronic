@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Feb 20 21:48:53 2020
+# Process ID: 1888
+# Current directory: C:/Users/2192600/ConfigurableEletronic/ClassPL1 - Lab1-20200220/Lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1700 C:\Users\2192600\ConfigurableEletronic\ClassPL1 - Lab1-20200220\Lab1\Lab1.xpr
+# Log file: C:/Users/2192600/ConfigurableEletronic/ClassPL1 - Lab1-20200220/Lab1/vivado.log
+# Journal file: C:/Users/2192600/ConfigurableEletronic/ClassPL1 - Lab1-20200220/Lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/2192600/ConfigurableEletronic/ClassPL1 - Lab1-20200220/Lab1/Lab1.xpr}
+set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
+synth_design -rtl -name rtl_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/2192600/ConfigurableEletronic/ClassPL1 - Lab1-20200220/Lab1_sources/lab1_tb.v}}
+set_property -name {xsim.simulate.runtime} -value {200ns} -objects [get_filesets sim_1]
+launch_simulation
+source lab1_tb.tcl
+run 500 ns
+run 500 ns
+run all
+restart
+run all
+restart
+run 500 ns
+run 500 ns
+restart
+run 500 ns
+restart
+run 200 ns
+run 500 ns
+save_wave_config {C:/Users/2192600/ConfigurableEletronic/ClassPL1 - Lab1-20200220/Lab1/lab1_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/Users/2192600/ConfigurableEletronic/ClassPL1 - Lab1-20200220/Lab1/lab1_tb_behav.wcfg}}
+set_property xsim.view {{C:/Users/2192600/ConfigurableEletronic/ClassPL1 - Lab1-20200220/Lab1/lab1_tb_behav.wcfg}} [get_filesets sim_1]
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_design
+open_run impl_1
+config_webtalk -user on
+close_design
+launch_simulation -mode post-implementation -type timing
+open_wave_config C:/Users/2192600/ConfigurableEletronic/ClassPL1
+open_wave_config -
+open_wave_config Lab1-20200220/Lab1/lab1_tb_behav.wcfg
+source lab1_tb.tcl
+close_sim
+launch_simulation -mode post-implementation -type timing
+source lab1_tb.tcl
+close_sim
+open_run synth_1 -name synth_1
+close_sim

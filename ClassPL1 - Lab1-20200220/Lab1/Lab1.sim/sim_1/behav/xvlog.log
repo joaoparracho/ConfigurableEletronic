@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/2192600/ConfigurableEletronic/ClassPL1 - Lab1-20200220/Lab1_sources/lab1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/2192600/ConfigurableEletronic/ClassPL1 - Lab1-20200220/Lab1_sources/lab1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab1_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/2192600/ConfigurableEletronic/ClassPL1 - Lab1-20200220/Lab1/Lab1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
