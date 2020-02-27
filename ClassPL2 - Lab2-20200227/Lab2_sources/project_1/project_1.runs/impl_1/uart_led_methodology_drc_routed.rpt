@@ -1,0 +1,97 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Feb 27 23:18:01 2020
+| Host         : RicardoAnastacioLegion running 64-bit major release  (build 9200)
+| Command      : report_methodology -file uart_led_methodology_drc_routed.rpt -pb uart_led_methodology_drc_routed.pb -rpx uart_led_methodology_drc_routed.rpx
+| Design       : uart_led
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 9
++-----------+----------+------------------------------------------+------------+
+| Rule      | Severity | Description                              | Violations |
++-----------+----------+------------------------------------------+------------+
+| TIMING-18 | Warning  | Missing input or output delay            | 1          |
+| XDCH-2    | Warning  | Same min and max delay values on IO port | 8          |
++-----------+----------+------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on rst_pin relative to clock(s) clk_pin
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same output delay of -2.000 ns has been defined on port 'led_pins[0]' relative to clock virtual_clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock virtual_clock -2.000 [get_ports {led_pins[*]}]
+C:/Users/ricar/Desktop/AmbientedeTrabalho/EletronicaConfiguravel/ConfigurableEletronic/ClassPL2 - Lab2-20200227/Lab2_sources/uart_led_timing.xdc (Line: 37)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same output delay of -2.000 ns has been defined on port 'led_pins[1]' relative to clock virtual_clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock virtual_clock -2.000 [get_ports {led_pins[*]}]
+C:/Users/ricar/Desktop/AmbientedeTrabalho/EletronicaConfiguravel/ConfigurableEletronic/ClassPL2 - Lab2-20200227/Lab2_sources/uart_led_timing.xdc (Line: 37)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same output delay of -2.000 ns has been defined on port 'led_pins[2]' relative to clock virtual_clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock virtual_clock -2.000 [get_ports {led_pins[*]}]
+C:/Users/ricar/Desktop/AmbientedeTrabalho/EletronicaConfiguravel/ConfigurableEletronic/ClassPL2 - Lab2-20200227/Lab2_sources/uart_led_timing.xdc (Line: 37)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same output delay of -2.000 ns has been defined on port 'led_pins[3]' relative to clock virtual_clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock virtual_clock -2.000 [get_ports {led_pins[*]}]
+C:/Users/ricar/Desktop/AmbientedeTrabalho/EletronicaConfiguravel/ConfigurableEletronic/ClassPL2 - Lab2-20200227/Lab2_sources/uart_led_timing.xdc (Line: 37)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same output delay of -2.000 ns has been defined on port 'led_pins[4]' relative to clock virtual_clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock virtual_clock -2.000 [get_ports {led_pins[*]}]
+C:/Users/ricar/Desktop/AmbientedeTrabalho/EletronicaConfiguravel/ConfigurableEletronic/ClassPL2 - Lab2-20200227/Lab2_sources/uart_led_timing.xdc (Line: 37)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same output delay of -2.000 ns has been defined on port 'led_pins[5]' relative to clock virtual_clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock virtual_clock -2.000 [get_ports {led_pins[*]}]
+C:/Users/ricar/Desktop/AmbientedeTrabalho/EletronicaConfiguravel/ConfigurableEletronic/ClassPL2 - Lab2-20200227/Lab2_sources/uart_led_timing.xdc (Line: 37)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same output delay of -2.000 ns has been defined on port 'led_pins[6]' relative to clock virtual_clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock virtual_clock -2.000 [get_ports {led_pins[*]}]
+C:/Users/ricar/Desktop/AmbientedeTrabalho/EletronicaConfiguravel/ConfigurableEletronic/ClassPL2 - Lab2-20200227/Lab2_sources/uart_led_timing.xdc (Line: 37)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same output delay of -2.000 ns has been defined on port 'led_pins[7]' relative to clock virtual_clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock virtual_clock -2.000 [get_ports {led_pins[*]}]
+C:/Users/ricar/Desktop/AmbientedeTrabalho/EletronicaConfiguravel/ConfigurableEletronic/ClassPL2 - Lab2-20200227/Lab2_sources/uart_led_timing.xdc (Line: 37)
+Related violations: <none>
+
+
