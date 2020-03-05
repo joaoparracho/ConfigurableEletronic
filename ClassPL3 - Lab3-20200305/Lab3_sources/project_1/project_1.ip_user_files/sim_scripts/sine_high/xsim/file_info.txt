@@ -1,0 +1,1 @@
+sine_high.vhd,vhdl,xil_defaultlib,../../../../project_1.srcs/sources_1/ip/sine_high/sim/sine_high.vhd,

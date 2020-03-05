@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Mar  5 21:43:30 2020
+# Process ID: 1284
+# Current directory: C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL3 - Lab3-20200305/Lab3_sources/project_1/project_1.runs/sine_mid_synth_1
+# Command line: vivado.exe -log sine_mid.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sine_mid.tcl
+# Log file: C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL3 - Lab3-20200305/Lab3_sources/project_1/project_1.runs/sine_mid_synth_1/sine_mid.vds
+# Journal file: C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL3 - Lab3-20200305/Lab3_sources/project_1/project_1.runs/sine_mid_synth_1\vivado.jou
+#-----------------------------------------------------------
+source sine_mid.tcl -notrace

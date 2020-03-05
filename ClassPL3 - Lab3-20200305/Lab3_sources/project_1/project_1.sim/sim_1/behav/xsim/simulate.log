@@ -1,0 +1,12 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+[@0] LEDS_n = xx00
+[@8000] LEDS_n = x000
+[@13000] LEDS_n = 0000
+[@3518000] LEDS_n = 0100
+[@3523000] LEDS_n = 0001
+[@3523000] LEDS_n = 0001
+[@6008000] LEDS_n = 0101
+[@6013000] LEDS_n = 0010
+[@6013000] LEDS_n = 0010
+$finish called at time : 7005 ns : File "C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL3 - Lab3-20200305/Lab3_sources/ug937-design-files/sim/testbench.v" Line 63

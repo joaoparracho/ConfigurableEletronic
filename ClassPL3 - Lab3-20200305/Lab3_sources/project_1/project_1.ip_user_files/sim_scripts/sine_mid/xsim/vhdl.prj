@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/ip/sine_mid/sim/sine_mid.vhd" \
+
+nosort

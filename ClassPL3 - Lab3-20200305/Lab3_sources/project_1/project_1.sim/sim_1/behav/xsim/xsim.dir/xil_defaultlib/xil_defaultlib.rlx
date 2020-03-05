@@ -1,0 +1,13 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL3 - Lab3-20200305/Lab3_sources/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL3 - Lab3-20200305/Lab3_sources/project_1/project_1.srcs/sources_1/ip/sine_high/sim/sine_high.vhd,1583444521,vhdl,,,,sine_high,,,,,,,,
+C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL3 - Lab3-20200305/Lab3_sources/project_1/project_1.srcs/sources_1/ip/sine_low/sim/sine_low.vhd,1583444660,vhdl,,,,sine_low,,,,,,,,
+C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL3 - Lab3-20200305/Lab3_sources/project_1/project_1.srcs/sources_1/ip/sine_mid/sim/sine_mid.vhd,1583444607,vhdl,,,,sine_mid,,,,,,,,
+C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL3 - Lab3-20200305/Lab3_sources/ug937-design-files/sim/testbench.v,1583446092,verilog,,,,testbench,,,,,,,,
+C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL3 - Lab3-20200305/Lab3_sources/ug937-design-files/sources/debounce.vhd,1409897928,vhdl,,,,debounce,,,,,,,,
+C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL3 - Lab3-20200305/Lab3_sources/ug937-design-files/sources/fsm.vhd,1409897928,vhdl,,,,fsm,,,,,,,,
+C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL3 - Lab3-20200305/Lab3_sources/ug937-design-files/sources/sinegen.vhd,1583448678,vhdl,,,,sinegen,,,,,,,,
+C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL3 - Lab3-20200305/Lab3_sources/ug937-design-files/sources/sinegen_demo.vhd,1409897930,vhdl,,,,sinegen_demo,,,,,,,,
