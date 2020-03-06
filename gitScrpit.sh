@@ -1,7 +1,8 @@
 if [ "$1" != "" ]; then
-    echo "Positional parameter 1 contains something"
+	git add -A && git commit -m "$1"
+	git push
+	echo "End"
 else
     echo "Positional parameter 1 is empty"
+	echo "Put commit Menssage arg"
 fi
-git add -A && git commit -m "$1"
-git push
