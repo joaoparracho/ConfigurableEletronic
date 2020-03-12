@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>MEE_EC</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>sine</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>sine</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>aa911897</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>sine</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>aa911897</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>de3c7f87</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>clk_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>ampl_cnt</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.depth_p&apos;)) - 1)">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sine_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.width_p&apos;)) - 1)">11</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>reg</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>depth_p</spirit:name>
+        <spirit:displayName>Depth P</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.depth_p" spirit:bitStringLength="10">&quot;0000001000&quot;</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>width_p</spirit:name>
+        <spirit:displayName>Width P</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.width_p" spirit:bitStringLength="10">&quot;0000001100&quot;</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sine_values.dat</spirit:name>
+        <spirit:userFileType>data</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sine_rtl.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_20797d67</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sine_values.dat</spirit:name>
+        <spirit:userFileType>data</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sine_rtl.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/sine_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_de3c7f87</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>sine_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>depth_p</spirit:name>
+      <spirit:displayName>Depth P</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.depth_p" spirit:bitStringLength="10">&quot;0000001000&quot;</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>width_p</spirit:name>
+      <spirit:displayName>Width P</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.width_p" spirit:bitStringLength="10">&quot;0000001100&quot;</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">sine_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">artix7</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>My_IPs</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>sine_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-03-12T21:08:28Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34d3a467_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20625ec7_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42b1ccde_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f7f9f20_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bac835d_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ca9717a_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a0cf998_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c2621cc_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55be859e_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17e3cb52_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@192b6634_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23cce1ea_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b74d7a5_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ee65d1d_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d916e9d_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3426100e_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7283dd26_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a4981bb_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44f55de6_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32919b7e_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@728de6d8_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44cd4e2a_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40dae5b2_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6830b8d2_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78e6280d_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62125e7a_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12860a5a_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25806dcb_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24da1b69_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ceeb270_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@642cf7b3_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@797ebcdd_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27548b83_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bdea8ff_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33c821c0_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c788e16_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f2c2ecf_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/digital_sine/digital_sine.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fbf7901_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1269beef_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13f91daa_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4f3a5f07"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="0d0f0d15"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="ad926205"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="e8305368"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

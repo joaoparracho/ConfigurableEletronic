@@ -1,0 +1,84 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Mar 12 21:40:45 2020
+| Host         : RicardoAnastacioLegion running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file modulator_ipi_wrapper_control_sets_placed.rpt
+| Design       : modulator_ipi_wrapper
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     6 |
+|    Minimum number of control sets                        |     6 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    10 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     6 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              13 |            7 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              64 |           16 |
+| Yes          | No                    | No                     |              20 |            5 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              13 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+------------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
+|    Clock Signal   |                           Enable Signal                          |                      Set/Reset Signal                      | Slice Load Count | Bel Load Count |
++-------------------+------------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
+|  clk_in_IBUF_BUFG | modulator_ipi_i/frequency_trigger_0/inst/freq_trig               |                                                            |                2 |              8 |
+|  clk_in_IBUF_BUFG | modulator_ipi_i/pwm_0/inst/freq_ce/E[0]                          |                                                            |                3 |             12 |
+|  clk_in_IBUF_BUFG |                                                                  |                                                            |                7 |             13 |
+|  clk_in_IBUF_BUFG | modulator_ipi_i/pwm_0/inst/freq_ce/FSM_sequential_state_r_reg[1] | modulator_ipi_i/pwm_0/inst/freq_ce/freq_trig_reg_0         |                4 |             13 |
+|  clk_in_IBUF_BUFG |                                                                  | modulator_ipi_i/frequency_trigger_0/inst/freq_trig_i_1_n_0 |                8 |             32 |
+|  clk_in_IBUF_BUFG |                                                                  | modulator_ipi_i/pwm_0/inst/freq_ce/freq_trig_i_1_n_0       |                8 |             32 |
++-------------------+------------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
+
+

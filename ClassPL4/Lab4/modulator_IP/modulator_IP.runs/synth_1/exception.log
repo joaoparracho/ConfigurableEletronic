@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\ricar\Desktop\EletronicaConfiguravel\ConfigurableEletronic\ClassPL4\Lab4\modulator_IP\modulator_IP.runs\synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permissão negada

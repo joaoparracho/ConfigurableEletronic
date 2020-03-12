@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>MEE_EC</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>modulator_ipi_frequency_trigger_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:modelName>frequency_trigger</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Mar 12 21:31:42 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:712d5f12</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_synthesisconstraints</spirit:name>
+        <spirit:displayName>Synthesis Constraints</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:712d5f12</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesiswrapper</spirit:name>
+        <spirit:displayName>Verilog Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>modulator_ipi_frequency_trigger_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Mar 12 21:31:42 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:712d5f12</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:modelName>frequency_trigger</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Mar 12 21:31:42 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:c6e0f7d1</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
+        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>modulator_ipi_frequency_trigger_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Mar 12 21:31:42 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:c6e0f7d1</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Mar 12 21:36:29 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:712d5f12</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>clk_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sw0</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>div_factor_freqhigh</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>div_factor_freqlow</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>freq_trig</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>reg</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/db35/frequency_trigger_rtl.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/modulator_ipi_frequency_trigger_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/db35/frequency_trigger_rtl.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/modulator_ipi_frequency_trigger_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>modulator_ipi_frequency_trigger_0_0.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>modulator_ipi_frequency_trigger_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>modulator_ipi_frequency_trigger_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>modulator_ipi_frequency_trigger_0_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>modulator_ipi_frequency_trigger_0_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>frequency_trigger_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">modulator_ipi_frequency_trigger_0_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>frequency_trigger_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77f33227_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2097613a_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60eeb42b_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41012fe4_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@493dfae7_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2327adf6_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12bff748_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/lab4_source</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5329f237_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/lab4_source</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77ec4ac_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/lab4_source</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d3b04d4_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/lab4_sourc</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36d2c5a7_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/lab4_sour</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12a71939_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/lab4_sou</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a7ebc39_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/lab4_so</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76ab4c98_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/lab4_s</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ee4a804_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/lab4_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@218cd79c_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/lab4</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29efdbf1_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/lab</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f2fa9f4_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/la</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d34cc17_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports/l</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12d9c106_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e75312c_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imports</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a899d37_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/import</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d43ef5f_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/impor</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e881c2f_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/impo</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50858805_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/imp</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44f7fd5c_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/im</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f67eeaa_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1/i</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19761ca1_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ee6b012_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65abbecb_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12ead0_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7da48f6b_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/source</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c026947_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sourc</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19ee82c4_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sour</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17dd8015_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/sou</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e378b23_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/so</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5987b796_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs/s</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e95aa7b_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52743b2c_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77cc7a9c_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.src</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6adc601b_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.sr</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7453ac09_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.s</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70a394a7_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f9d66_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigger</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22848eb0_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1db7d8c0_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trigg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24fab8f2_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_trig</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b5299a2_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_tri</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22433b45_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_tr</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14d77003_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_t</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f7832f_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cf41705_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequency</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50354d74_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequenc</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@779b882d_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequen</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30abfc20_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/freque</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f369e38_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/frequ</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@501b100b_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/freq</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72ba8673_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/fre</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30545afe_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/fr</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f754b71_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger/f</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79d276b0_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23559625_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigger</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38fe6c79_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@228457e7_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trigg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24d74084_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_trig</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71103762_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_tri</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b9d909b_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_tr</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51a94949_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_t</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@229ddd5f_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ea9839d_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequency</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b891c60_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequenc</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47aa0028_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequen</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51435f26_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/freque</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dba71a5_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/frequ</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@352a8d94_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/freq</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45877d5c_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/freq</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67061c_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/freq</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35d7cb2c_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/fre</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f16b307_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/fre</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e2951c8_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/fre</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2db6c00f_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/fr</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b8a014_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/fr</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@86be420_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/fr</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19b76701_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/f</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7df8bcbf_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/f</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a2cf3cf_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/f</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fe98541_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37932850_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35967c0_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e5ee5a9_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/i</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e875491_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/i</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77bb9b42_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/i</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36fd4482_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4aebab03_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@606c616c_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32795c43_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ba4acc_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@257ca786_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c940be6_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ab42df2_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eae298c_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_r</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4876434_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_r</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@297e5c01_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_r</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33f96dde_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_re</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@477df8ce_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_re</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32f741f7_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_re</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73addcb9_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_rep</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60809546_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_rep</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57e3fec2_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_rep</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11369b1e_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repo</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1555abb_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repo</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@262f7f04_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repo</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@973d440_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repos</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15584ac4_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repos</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30f0ea01_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repos</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@792778be_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_reposi</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ecd36c2_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_reposi</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42031607_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_reposi</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54be6818_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_reposit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ff6eb8d_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_reposit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c00b7e2_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_reposit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55a96db6_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_reposito</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38734dfb_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_reposito</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@314da0e2_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_reposito</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a27ef78_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repositor</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17fd71e4_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repositor</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35414622_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repositor</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77836848_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@696e102d_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64fb864c_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11270c0e_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5703a54b_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6892c7bf_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e58ea86_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@331fe6db_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a1353f5_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40ba82f5_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21487031_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50449d31_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3233f337_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@517b736e_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bd6f926_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fddacd4_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5beba472_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@602bcf4_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68f902f9_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@622b65e_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a8e8435_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d36fb32_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13cbab99_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76428970_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e7aa912_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31e9f69d_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/ip_repository</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c0d2c21b"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="7c59434d"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="59bf1034"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

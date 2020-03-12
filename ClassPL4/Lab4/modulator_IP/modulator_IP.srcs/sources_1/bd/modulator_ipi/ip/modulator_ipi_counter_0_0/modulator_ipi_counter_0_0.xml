@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>MEE_EC</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>modulator_ipi_counter_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:modelName>counter</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Mar 12 21:31:41 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:3180e45f</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_synthesisconstraints</spirit:name>
+        <spirit:displayName>Synthesis Constraints</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:3180e45f</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesiswrapper</spirit:name>
+        <spirit:displayName>Verilog Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>modulator_ipi_counter_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Mar 12 21:31:41 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:3180e45f</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:modelName>counter</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Mar 12 21:31:41 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:8e4867da</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
+        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>modulator_ipi_counter_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Mar 12 21:31:41 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:8e4867da</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Mar 12 21:32:16 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:3180e45f</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>clk_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cnt_en</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cnt_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.depth_p&apos;)) - 1)">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>reg</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>cnt_value_p</spirit:name>
+        <spirit:displayName>Cnt Value P</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.cnt_value_p" spirit:bitStringLength="10">&quot;0011111111&quot;</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>depth_p</spirit:name>
+        <spirit:displayName>Depth P</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.depth_p" spirit:bitStringLength="10">&quot;0000001000&quot;</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/1da0/counter_rtl.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/modulator_ipi_counter_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/1da0/counter_rtl.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/modulator_ipi_counter_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>modulator_ipi_counter_0_0.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>modulator_ipi_counter_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>modulator_ipi_counter_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>modulator_ipi_counter_0_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>modulator_ipi_counter_0_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>counter_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>cnt_value_p</spirit:name>
+      <spirit:displayName>Cnt Value P</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.cnt_value_p" spirit:bitStringLength="10">&quot;0011111111&quot;</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>depth_p</spirit:name>
+      <spirit:displayName>Depth P</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.depth_p" spirit:bitStringLength="10">&quot;0000001000&quot;</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">modulator_ipi_counter_0_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>counter_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1514d4f4_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/counter/counter.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ad58589_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/counter/counter.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4680c870_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/counter/counter.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16027375_ARCHIVE_LOCATION">c:/users/ricar/desktop/eletronicaconfiguravel/configurableeletronic/classpl4_packaging ip and ip integrator-20200312/lab4_sources/counter/counter.srcs/sources_1/imports/lab4_sources</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ea70559_ARCHIVE_LOCATION"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@790a1974_ARCHIVE_LOCATION"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3505be9b_ARCHIVE_LOCATION"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14a8bc4b_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@587f81d1_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79bd489e_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42dc1ea5_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@649a8a39_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c7890b5_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@572e5a7d_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@786fd2c4_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2181de10_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f77f7fa_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61a34558_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e58b361_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b272830_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5523b609_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46982313_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47cd2f99_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c703359_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cd01229_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c365584_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4993ed5b_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e090a16_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35d31092_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6022659c_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@264e3eea_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11c7582c_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a7572a5_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54e3cf50_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@162252bb_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53c6be7f_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34e139b2_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6581f1f7_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23d77e8b_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ee3cec9_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f757231_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23d1efee_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29ba2476_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23b383c9_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31c8bb1e_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4398ec2a_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a0bc713_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56ade958_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bb3d1a_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58e2b73b_ARCHIVE_LOCATION">C:/Users/ricar/Desktop/EletronicaConfiguravel/ConfigurableEletronic/ClassPL4_Packaging IP and IP Integrator-20200312/Lab4_sources/ip_repository</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.cnt_value_p" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.depth_p" xilinx:valueSource="user"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="66b07b97"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="cd20ffe5"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="d7646a0b"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="8ecc4af3"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

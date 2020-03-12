@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/modulator_ipi/sim/modulator_ipi.vhd" \
+
+nosort
