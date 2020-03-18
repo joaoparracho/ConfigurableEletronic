@@ -7,7 +7,7 @@ module counter
    
  (  input clk_in,                      // input clock signal 
     input cnt_en,                      // counter enable 
-    output reg [depth_p-1:0] cnt_out); // current counter value;
+    output reg [depth_p-1:0] cnt_out); // current counter value; 
 
 reg [depth_p-1:0] cnt_out_r;        // current counter value
 initial cnt_out_r = 0;
