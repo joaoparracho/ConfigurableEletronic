@@ -2,7 +2,7 @@
 
 module counter
 # (parameter    cnt_value_p = 10'd4,   // threshold value for counter             
-                depth_p = 10'd3        // the number of samples in one period of the signal
+                depth_p = 10'd3        // the  number of samples in one period of the signal
    )
    
  (  input clk_in,                      // input clock signal 
