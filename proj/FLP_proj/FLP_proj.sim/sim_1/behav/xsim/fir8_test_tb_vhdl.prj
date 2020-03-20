@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../P1_Sources/coef_rom.vhd" \
+"../../../../../P1_Sources/dds.vhd" \
+"../../../../../P1_Sources/dds_rom1.vhd" \
+"../../../../../P1_Sources/dds_rom2.vhd" \
+"../../../../../P1_Sources/fir_filter_8.vhd" \
+"../../../../../P1_Sources/fir8_test.vhd" \
+"../../../../../P1_Sources/fir8_test_tb.vhd" \
+
+# Do not sort compile order
+nosort

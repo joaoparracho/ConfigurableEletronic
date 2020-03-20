@@ -1,0 +1,22 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Programas/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8851dc9b3e477dab9cd2effca1af74 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fir8_test_tb_behav xil_defaultlib.fir8_test_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.coef_rom [coef_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.dds_rom1 [dds_rom1_default]
+Compiling architecture behavioral of entity xil_defaultlib.dds_rom2 [dds_rom2_default]
+Compiling architecture rtl of entity xil_defaultlib.dds_sine [dds_sine_default]
+Compiling architecture rtl of entity xil_defaultlib.fir_filter_8 [fir_filter_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir8_test [fir8_test_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir8_test_tb
+Built simulation snapshot fir8_test_tb_behav
