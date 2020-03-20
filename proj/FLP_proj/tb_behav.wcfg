@@ -10,15 +10,18 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="405634934fs"></ZoomStartTime>
-      <ZoomEndTime time="419914935fs"></ZoomEndTime>
-      <Cursor1Time time="404454934fs"></Cursor1Time>
+      <ZoomStartTime time="404334934fs"></ZoomStartTime>
+      <ZoomEndTime time="418614935fs"></ZoomEndTime>
+      <Cursor1Time time="407254934fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
       <ValueColumnWidth column_width="142"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="11" />
+   <wave_markers>
+      <marker time="406234934" label="" />
+   </wave_markers>
    <wvobject fp_name="/fir8_test_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
