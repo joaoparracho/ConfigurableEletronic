@@ -1,0 +1,115 @@
+
+*** Running vivado
+    with args -log fir8_test_tb.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir8_test_tb.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source fir8_test_tb.tcl -notrace
+Command: synth_design -top fir8_test_tb -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8160 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 798.691 ; gain = 234.523
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fir8_test_tb' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_tb.vhd:37]
+INFO: [Synth 8-3491] module 'fir8_test' declared at 'C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test.vhd:34' bound to instance 'dut' of component 'fir8_test' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_tb.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'fir8_test' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'coef_rom' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/coef_rom.vhd:55]
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter addr_bits bound to: 3 - type: integer 
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'coef_rom' (1#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/coef_rom.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'dds_rom1' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds_rom1.vhd:47]
+	Parameter fcw_addr_width bound to: 4 - type: integer 
+	Parameter fcw_addr_bits bound to: 2 - type: integer 
+	Parameter fcw_data_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dds_rom1' (2#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds_rom1.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'dds_rom2' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds_rom2.vhd:46]
+	Parameter phase_addr_width bound to: 4 - type: integer 
+	Parameter phase_addr_bits bound to: 2 - type: integer 
+	Parameter phase_data_width bound to: 32 - type: integer 
+WARNING: [Synth 8-5825] expecting unsigned expression [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds_rom2.vhd:55]
+WARNING: [Synth 8-5825] expecting unsigned expression [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds_rom2.vhd:56]
+WARNING: [Synth 8-5825] expecting unsigned expression [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds_rom2.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'dds_rom2' (3#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds_rom2.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'dds_sine' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'dds_sine' (4#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'fir_filter_8_rtl' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:130]
+WARNING: [Synth 8-614] signal 'p_data' is read in the process but is not in the sensitivity list [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:164]
+WARNING: [Synth 8-614] signal 'r_coeff' is read in the process but is not in the sensitivity list [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:164]
+WARNING: [Synth 8-614] signal 'r_mult' is read in the process but is not in the sensitivity list [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:171]
+WARNING: [Synth 8-614] signal 'r_add_st0' is read in the process but is not in the sensitivity list [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'fir_filter_8_rtl' (5#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'fir8_test' (6#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test.vhd:45]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_tb.vhd:75]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_tb.vhd:88]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_tb.vhd:90]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_tb.vhd:92]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_tb.vhd:95]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_tb.vhd:98]
+INFO: [Synth 8-256] done synthesizing module 'fir8_test_tb' (7#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_tb.vhd:37]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1180.480 ; gain = 616.313
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1180.480 ; gain = 616.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1180.480 ; gain = 616.313
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1180.480 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:5]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:5]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'rstb'. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:23]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:23]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports rstb]'. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:23]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'sync_reset'. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:24]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:24]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports sync_reset]'. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:24]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'addr_fcw[*]'. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:27]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {addr_fcw[*]}]'. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:27]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'addr_phase[*]'. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:28]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {addr_phase[*]}]'. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:28]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'sine_in[*]'. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:35]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {sine_in[*]}]'. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:35]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'sine_out[*]'. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:36]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {sine_out[*]}]'. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:36]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1253.586 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1253.586 ; gain = 0.000
