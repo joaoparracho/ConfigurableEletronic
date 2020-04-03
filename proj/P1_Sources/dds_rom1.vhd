@@ -52,7 +52,8 @@ type rom_type is array (0 to fcw_addr_width-1) of std_logic_vector(fcw_data_widt
                             std_logic_vector(to_unsigned(((2**32)/100),fcw'length)), --the sine wave containd 100samples/period = 1MHz,
                             std_logic_vector(to_unsigned(((2**32)/20),fcw'length)), --the sine wave containd 100samples/period = 5MHz
                             std_logic_vector(to_unsigned(((2**32)/10),fcw'length)), --the sine wave containd 100samples/period = 10MHz
-                            std_logic_vector(to_unsigned(((2**32)/5),fcw'length)) --the sine wave containd 100samples/period = 20MHz                      
+                           -- std_logic_vector(to_unsigned(((2**32)/5),fcw'length)) --the sine wave containd 100samples/period = 20MHz    
+                            std_logic_vector(to_unsigned(((2**32)/8),fcw'length)) --the sine wave containd 100samples/period = 12MHz                   
         );
 
 begin
