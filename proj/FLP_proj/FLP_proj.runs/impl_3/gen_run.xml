@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_3" LaunchPart="xc7a35tcpg236-1" LaunchTime="1585856544">
-  <File Type="OPT-HWDEF" Name="fir8_test.hwdef"/>
-  <File Type="ROUTE-BUS-SKEW" Name="fir8_test_bus_skew_routed.rpt"/>
-  <File Type="PA-DCP" Name="fir8_test.dcp"/>
+<GenRun Id="impl_3" LaunchPart="xc7a35tcpg236-1" LaunchTime="1585930952">
   <File Type="BITSTR-BMM" Name="fir8_test_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="fir8_test_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="fir8_test_timing_summary_init.rpt"/>
@@ -13,6 +10,7 @@
   <File Type="ROUTE-PWR-SUM" Name="fir8_test_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="fir8_test_reports.tcl"/>
   <File Type="OPT-DRC" Name="fir8_test_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="fir8_test.hwdef"/>
   <File Type="PWROPT-DCP" Name="fir8_test_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="fir8_test_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="fir8_test_timing_summary_pwropted.rpt"/>
@@ -50,6 +48,7 @@
   <File Type="ROUTE-TIMING-RPX" Name="fir8_test_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="fir8_test_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="fir8_test_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="fir8_test_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="fir8_test_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="fir8_test_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="fir8_test_postroute_physopt.dcp"/>
@@ -145,9 +144,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
