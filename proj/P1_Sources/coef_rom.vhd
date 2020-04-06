@@ -56,14 +56,14 @@ architecture Behavioral of coef_rom is
 type rom_type is array (0 to addr_width-1) of std_logic_vector(data_width-1 downto 0);
     
     signal coefficient_ROM : rom_type := (
-                            "00010000", -- 0
-                            "00010110", -- 1
-                            "00011100", -- 2
-                            "00011110", -- 3
-                            "00011110", -- 4
-                            "00011100", -- 5
-                            "00010110", -- 6
-                            "00010000" --7
+                            "00001011", -- 0
+                            "00001100", -- 1
+                            "00001101", -- 2
+                            "00001101", -- 3
+                            "00001101", -- 4
+                            "00001101", -- 5
+                            "00001100", -- 6
+                            "00001011" --7
         );
 
 begin

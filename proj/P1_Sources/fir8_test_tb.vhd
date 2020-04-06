@@ -89,7 +89,7 @@ wait for clock_period*10;
 rstb <='1';
 wait for clock_period*4;
 sync_reset <='0';
-wait for clock_period*500;
+wait for clock_period*1000;
 
 addr_fcw <= "01";
 wait for clock_period*500;
