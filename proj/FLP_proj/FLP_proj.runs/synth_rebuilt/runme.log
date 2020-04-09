@@ -15,40 +15,40 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8388 
+INFO: Helper process launched with PID 12368 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 798.922 ; gain = 233.414
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 797.977 ; gain = 233.859
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'fir8_test' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test.vhd:45]
-INFO: [Synth 8-638] synthesizing module 'coef_rom' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/coef_rom.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'fir8_test' [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'coef_rom' [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/coef_rom.vhd:55]
 	Parameter addr_width bound to: 8 - type: integer 
 	Parameter addr_bits bound to: 3 - type: integer 
 	Parameter data_width bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'coef_rom' (1#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/coef_rom.vhd:55]
-INFO: [Synth 8-638] synthesizing module 'dds_rom1' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds_rom1.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'coef_rom' (1#1) [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/coef_rom.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'dds_rom1' [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds_rom1.vhd:47]
 	Parameter fcw_addr_width bound to: 4 - type: integer 
 	Parameter fcw_addr_bits bound to: 2 - type: integer 
 	Parameter fcw_data_width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'dds_rom1' (2#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds_rom1.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'dds_rom2' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds_rom2.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'dds_rom1' (2#1) [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds_rom1.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'dds_rom2' [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds_rom2.vhd:46]
 	Parameter phase_addr_width bound to: 4 - type: integer 
 	Parameter phase_addr_bits bound to: 2 - type: integer 
 	Parameter phase_data_width bound to: 32 - type: integer 
-WARNING: [Synth 8-5825] expecting unsigned expression [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds_rom2.vhd:55]
-WARNING: [Synth 8-5825] expecting unsigned expression [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds_rom2.vhd:56]
-WARNING: [Synth 8-5825] expecting unsigned expression [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds_rom2.vhd:57]
-INFO: [Synth 8-256] done synthesizing module 'dds_rom2' (3#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds_rom2.vhd:46]
-INFO: [Synth 8-638] synthesizing module 'dds_sine' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'dds_sine' (4#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:16]
-INFO: [Synth 8-638] synthesizing module 'fir_filter_8_rtl' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:130]
-WARNING: [Synth 8-614] signal 'p_data' is read in the process but is not in the sensitivity list [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:164]
-WARNING: [Synth 8-614] signal 'r_coeff' is read in the process but is not in the sensitivity list [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:164]
-WARNING: [Synth 8-614] signal 'r_mult' is read in the process but is not in the sensitivity list [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:171]
-WARNING: [Synth 8-614] signal 'r_add_st0' is read in the process but is not in the sensitivity list [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:178]
-INFO: [Synth 8-256] done synthesizing module 'fir_filter_8_rtl' (5#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:130]
-INFO: [Synth 8-256] done synthesizing module 'fir8_test' (6#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test.vhd:45]
+WARNING: [Synth 8-5825] expecting unsigned expression [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds_rom2.vhd:55]
+WARNING: [Synth 8-5825] expecting unsigned expression [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds_rom2.vhd:56]
+WARNING: [Synth 8-5825] expecting unsigned expression [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds_rom2.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'dds_rom2' (3#1) [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds_rom2.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'dds_sine' [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'dds_sine' (4#1) [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'fir_filter_8_rtl' [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:130]
+WARNING: [Synth 8-614] signal 'p_data' is read in the process but is not in the sensitivity list [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:164]
+WARNING: [Synth 8-614] signal 'r_coeff' is read in the process but is not in the sensitivity list [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:164]
+WARNING: [Synth 8-614] signal 'r_mult' is read in the process but is not in the sensitivity list [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:171]
+WARNING: [Synth 8-614] signal 'r_add_st0' is read in the process but is not in the sensitivity list [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'fir_filter_8_rtl' (5#1) [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'fir8_test' (6#1) [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test.vhd:45]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1180.383 ; gain = 614.875
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1180.297 ; gain = 616.180
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -61,46 +61,46 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1180.383 ; gain = 614.875
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1180.297 ; gain = 616.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1180.383 ; gain = 614.875
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1180.297 ; gain = 616.180
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1180.383 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1180.297 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc]
-INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc:13]
-Finished Parsing XDC File [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc]
+Parsing XDC File [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test_timing.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test_timing.xdc:13]
+Finished Parsing XDC File [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test_timing.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1268.043 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1269.309 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1268.043 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1269.309 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1268.043 ; gain = 702.535
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1269.309 ; gain = 705.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1268.043 ; gain = 702.535
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1269.309 ; gain = 705.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1268.043 ; gain = 702.535
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1269.309 ; gain = 705.191
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "fcw_ROM" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "phase_ROM" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1268.043 ; gain = 702.535
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 1269.309 ; gain = 705.191
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -173,11 +173,11 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[5][7:0]' into 'fir_filter_i4/r_coeff_reg[4][7:0]' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:150]
-INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[0][7:0]' into 'fir_filter_i4/r_coeff_reg[7][7:0]' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:150]
-INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[1][7:0]' into 'fir_filter_i4/r_coeff_reg[6][7:0]' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:150]
-INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[2][7:0]' into 'fir_filter_i4/r_coeff_reg[4][7:0]' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:150]
-INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[3][7:0]' into 'fir_filter_i4/r_coeff_reg[4][7:0]' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:150]
+INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[5][7:0]' into 'fir_filter_i4/r_coeff_reg[4][7:0]' [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:150]
+INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[0][7:0]' into 'fir_filter_i4/r_coeff_reg[7][7:0]' [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:150]
+INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[1][7:0]' into 'fir_filter_i4/r_coeff_reg[6][7:0]' [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:150]
+INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[2][7:0]' into 'fir_filter_i4/r_coeff_reg[4][7:0]' [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:150]
+INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[3][7:0]' into 'fir_filter_i4/r_coeff_reg[4][7:0]' [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:150]
 DSP Report: Generating DSP fir_filter_i4/RESIZE0, operation Mode is: A*B.
 DSP Report: operator fir_filter_i4/RESIZE0 is absorbed into DSP fir_filter_i4/RESIZE0.
 DSP Report: Generating DSP fir_filter_i4/RESIZE0, operation Mode is: PCIN+A*B.
@@ -289,7 +289,7 @@ INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[4][5]' (FDC) to
 INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[4][6]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fir_filter_i4/r_coeff_reg[4][7] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:05 . Memory (MB): peak = 1268.043 ; gain = 702.535
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1269.309 ; gain = 705.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -323,22 +323,22 @@ Note: The table above is a preliminary report that shows the DSPs inferred at th
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:6]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:6]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:6]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:6]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:6]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:6]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:6]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:6]
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -349,13 +349,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1268.043 ; gain = 702.535
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 1269.309 ; gain = 705.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1268.043 ; gain = 702.535
+Finished Timing Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:22 . Memory (MB): peak = 1269.309 ; gain = 705.191
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -378,24 +378,24 @@ INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_nco_reg[27]' (FDCE) to 'dds
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_nco_reg[28]' (FDCE) to 'dds_sine_i3/r_nco_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_nco_reg[29]' (FDCE) to 'dds_sine_i3/r_nco_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_nco_reg[30]' (FDCE) to 'dds_sine_i3/r_nco_reg[31]'
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:6]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:6]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:6]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:6]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:6]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:6]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:6]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/dds.vhd:6]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1268.043 ; gain = 702.535
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:23 . Memory (MB): peak = 1269.309 ; gain = 705.191
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -420,13 +420,13 @@ INFO: [Synth 8-6064] Net sel[12] is driving 52 big block pins (URAM, BRAM and DS
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:20 . Memory (MB): peak = 1268.043 ; gain = 702.535
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:27 . Memory (MB): peak = 1269.309 ; gain = 705.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:20 . Memory (MB): peak = 1268.043 ; gain = 702.535
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:27 . Memory (MB): peak = 1269.309 ; gain = 705.191
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -445,25 +445,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:20 . Memory (MB): peak = 1268.043 ; gain = 702.535
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:27 . Memory (MB): peak = 1269.309 ; gain = 705.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:20 . Memory (MB): peak = 1268.043 ; gain = 702.535
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:27 . Memory (MB): peak = 1269.309 ; gain = 705.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:20 . Memory (MB): peak = 1268.043 ; gain = 702.535
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:27 . Memory (MB): peak = 1269.309 ; gain = 705.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:20 . Memory (MB): peak = 1268.043 ; gain = 702.535
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:01:27 . Memory (MB): peak = 1269.309 ; gain = 705.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -504,28 +504,28 @@ Report Instance Areas:
 |3     |  fir_filter_i4 |fir_filter_8_rtl |   172|
 +------+----------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:20 . Memory (MB): peak = 1268.043 ; gain = 702.535
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:27 . Memory (MB): peak = 1269.309 ; gain = 705.191
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:19 . Memory (MB): peak = 1268.043 ; gain = 614.875
-Synthesis Optimization Complete : Time (s): cpu = 00:01:20 ; elapsed = 00:01:21 . Memory (MB): peak = 1268.043 ; gain = 702.535
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:01:25 . Memory (MB): peak = 1269.309 ; gain = 616.180
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 1269.309 ; gain = 705.191
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1271.477 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1277.137 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1271.477 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1277.137 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 162 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:26 . Memory (MB): peak = 1271.477 ; gain = 970.434
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1271.477 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:33 . Memory (MB): peak = 1277.137 ; gain = 976.070
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1277.137 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/FLP_proj/FLP_proj.runs/synth_rebuilt/fir8_test.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/synth_rebuilt/fir8_test.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file fir8_test_utilization_synth.rpt -pb fir8_test_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr  2 20:34:41 2020...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  8 11:57:19 2020...

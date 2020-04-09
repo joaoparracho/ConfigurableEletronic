@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Thu Apr  2 20:29:56 2020
-| Host         : Anastacio running 64-bit major release  (build 9200)
+| Date         : Wed Apr  8 12:11:50 2020
+| Host         : LAPTOP-771IFLK3 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file fir8_test_timing_summary_routed.rpt -pb fir8_test_timing_summary_routed.pb -rpx fir8_test_timing_summary_routed.rpx -warn_on_violation
 | Design       : fir8_test
 | Device       : 7a35t-cpg236
@@ -222,11 +222,11 @@ Slack (VIOLATED) :        -2.262ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.560     4.566    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.560     4.566    fir_filter_i4/CLK
     SLICE_X9Y32          FDCE                                         r  fir_filter_i4/p_data_reg[0][13]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y32          FDCE (Prop_fdce_C_Q)         0.456     5.022 r  fir_filter_i4/p_data_reg[0][13]/Q
-                         net (fo=18, routed)          0.619     5.641    p_data_reg[0][13]
+                         net (fo=18, routed)          0.619     5.641    fir_filter_i4/p_data_reg[0][13]
     DSP48_X0Y12          DSP48E1 (Prop_dsp48e1_A[27]_PCOUT[47])
                                                       4.036     9.677 r  fir_filter_i4/RESIZE0__6/PCOUT[47]
                          net (fo=1, routed)           0.002     9.679    fir_filter_i4/RESIZE0__6_n_106
@@ -256,7 +256,7 @@ Slack (VIOLATED) :        -2.262ns  (required time - arrival time)
                          net (fo=1, routed)           0.000    16.587    fir_filter_i4/o_data_reg[14]_i_1_n_0
     SLICE_X9Y22          CARRY4 (Prop_carry4_CI_O[0])
                                                       0.223    16.810 r  fir_filter_i4/o_data_reg[15]_i_1/O[0]
-                         net (fo=1, routed)           0.000    16.810    p_0_in[15]
+                         net (fo=1, routed)           0.000    16.810    fir_filter_i4/p_0_in[15]
     SLICE_X9Y22          FDCE                                         r  fir_filter_i4/o_data_reg[15]/D
   -------------------------------------------------------------------    -------------------
 
@@ -266,7 +266,7 @@ Slack (VIOLATED) :        -2.262ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.436    14.200    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.436    14.200    fir_filter_i4/CLK
     SLICE_X9Y22          FDCE                                         r  fir_filter_i4/o_data_reg[15]/C
                          clock pessimism              0.322    14.522    
                          clock uncertainty           -0.035    14.487    
@@ -305,11 +305,11 @@ Slack (VIOLATED) :        -2.257ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.560     4.566    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.560     4.566    fir_filter_i4/CLK
     SLICE_X9Y32          FDCE                                         r  fir_filter_i4/p_data_reg[0][13]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y32          FDCE (Prop_fdce_C_Q)         0.456     5.022 r  fir_filter_i4/p_data_reg[0][13]/Q
-                         net (fo=18, routed)          0.619     5.641    p_data_reg[0][13]
+                         net (fo=18, routed)          0.619     5.641    fir_filter_i4/p_data_reg[0][13]
     DSP48_X0Y12          DSP48E1 (Prop_dsp48e1_A[27]_PCOUT[47])
                                                       4.036     9.677 r  fir_filter_i4/RESIZE0__6/PCOUT[47]
                          net (fo=1, routed)           0.002     9.679    fir_filter_i4/RESIZE0__6_n_106
@@ -336,7 +336,7 @@ Slack (VIOLATED) :        -2.257ns  (required time - arrival time)
                          net (fo=1, routed)           0.000    16.473    fir_filter_i4/o_data_reg[10]_i_1_n_0
     SLICE_X9Y21          CARRY4 (Prop_carry4_CI_O[1])
                                                       0.334    16.807 r  fir_filter_i4/o_data_reg[14]_i_1/O[1]
-                         net (fo=1, routed)           0.000    16.807    p_0_in[12]
+                         net (fo=1, routed)           0.000    16.807    fir_filter_i4/p_0_in[12]
     SLICE_X9Y21          FDCE                                         r  fir_filter_i4/o_data_reg[12]/D
   -------------------------------------------------------------------    -------------------
 
@@ -346,7 +346,7 @@ Slack (VIOLATED) :        -2.257ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.438    14.202    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.438    14.202    fir_filter_i4/CLK
     SLICE_X9Y21          FDCE                                         r  fir_filter_i4/o_data_reg[12]/C
                          clock pessimism              0.322    14.524    
                          clock uncertainty           -0.035    14.489    
@@ -385,11 +385,11 @@ Slack (VIOLATED) :        -2.236ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.560     4.566    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.560     4.566    fir_filter_i4/CLK
     SLICE_X9Y32          FDCE                                         r  fir_filter_i4/p_data_reg[0][13]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y32          FDCE (Prop_fdce_C_Q)         0.456     5.022 r  fir_filter_i4/p_data_reg[0][13]/Q
-                         net (fo=18, routed)          0.619     5.641    p_data_reg[0][13]
+                         net (fo=18, routed)          0.619     5.641    fir_filter_i4/p_data_reg[0][13]
     DSP48_X0Y12          DSP48E1 (Prop_dsp48e1_A[27]_PCOUT[47])
                                                       4.036     9.677 r  fir_filter_i4/RESIZE0__6/PCOUT[47]
                          net (fo=1, routed)           0.002     9.679    fir_filter_i4/RESIZE0__6_n_106
@@ -416,7 +416,7 @@ Slack (VIOLATED) :        -2.236ns  (required time - arrival time)
                          net (fo=1, routed)           0.000    16.473    fir_filter_i4/o_data_reg[10]_i_1_n_0
     SLICE_X9Y21          CARRY4 (Prop_carry4_CI_O[3])
                                                       0.313    16.786 r  fir_filter_i4/o_data_reg[14]_i_1/O[3]
-                         net (fo=1, routed)           0.000    16.786    p_0_in[14]
+                         net (fo=1, routed)           0.000    16.786    fir_filter_i4/p_0_in[14]
     SLICE_X9Y21          FDCE                                         r  fir_filter_i4/o_data_reg[14]/D
   -------------------------------------------------------------------    -------------------
 
@@ -426,7 +426,7 @@ Slack (VIOLATED) :        -2.236ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.438    14.202    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.438    14.202    fir_filter_i4/CLK
     SLICE_X9Y21          FDCE                                         r  fir_filter_i4/o_data_reg[14]/C
                          clock pessimism              0.322    14.524    
                          clock uncertainty           -0.035    14.489    
@@ -465,11 +465,11 @@ Slack (VIOLATED) :        -2.162ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.560     4.566    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.560     4.566    fir_filter_i4/CLK
     SLICE_X9Y32          FDCE                                         r  fir_filter_i4/p_data_reg[0][13]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y32          FDCE (Prop_fdce_C_Q)         0.456     5.022 r  fir_filter_i4/p_data_reg[0][13]/Q
-                         net (fo=18, routed)          0.619     5.641    p_data_reg[0][13]
+                         net (fo=18, routed)          0.619     5.641    fir_filter_i4/p_data_reg[0][13]
     DSP48_X0Y12          DSP48E1 (Prop_dsp48e1_A[27]_PCOUT[47])
                                                       4.036     9.677 r  fir_filter_i4/RESIZE0__6/PCOUT[47]
                          net (fo=1, routed)           0.002     9.679    fir_filter_i4/RESIZE0__6_n_106
@@ -496,7 +496,7 @@ Slack (VIOLATED) :        -2.162ns  (required time - arrival time)
                          net (fo=1, routed)           0.000    16.473    fir_filter_i4/o_data_reg[10]_i_1_n_0
     SLICE_X9Y21          CARRY4 (Prop_carry4_CI_O[2])
                                                       0.239    16.712 r  fir_filter_i4/o_data_reg[14]_i_1/O[2]
-                         net (fo=1, routed)           0.000    16.712    p_0_in[13]
+                         net (fo=1, routed)           0.000    16.712    fir_filter_i4/p_0_in[13]
     SLICE_X9Y21          FDCE                                         r  fir_filter_i4/o_data_reg[13]/D
   -------------------------------------------------------------------    -------------------
 
@@ -506,7 +506,7 @@ Slack (VIOLATED) :        -2.162ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.438    14.202    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.438    14.202    fir_filter_i4/CLK
     SLICE_X9Y21          FDCE                                         r  fir_filter_i4/o_data_reg[13]/C
                          clock pessimism              0.322    14.524    
                          clock uncertainty           -0.035    14.489    
@@ -545,11 +545,11 @@ Slack (VIOLATED) :        -2.146ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.560     4.566    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.560     4.566    fir_filter_i4/CLK
     SLICE_X9Y32          FDCE                                         r  fir_filter_i4/p_data_reg[0][13]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y32          FDCE (Prop_fdce_C_Q)         0.456     5.022 r  fir_filter_i4/p_data_reg[0][13]/Q
-                         net (fo=18, routed)          0.619     5.641    p_data_reg[0][13]
+                         net (fo=18, routed)          0.619     5.641    fir_filter_i4/p_data_reg[0][13]
     DSP48_X0Y12          DSP48E1 (Prop_dsp48e1_A[27]_PCOUT[47])
                                                       4.036     9.677 r  fir_filter_i4/RESIZE0__6/PCOUT[47]
                          net (fo=1, routed)           0.002     9.679    fir_filter_i4/RESIZE0__6_n_106
@@ -576,7 +576,7 @@ Slack (VIOLATED) :        -2.146ns  (required time - arrival time)
                          net (fo=1, routed)           0.000    16.473    fir_filter_i4/o_data_reg[10]_i_1_n_0
     SLICE_X9Y21          CARRY4 (Prop_carry4_CI_O[0])
                                                       0.223    16.696 r  fir_filter_i4/o_data_reg[14]_i_1/O[0]
-                         net (fo=1, routed)           0.000    16.696    p_0_in[11]
+                         net (fo=1, routed)           0.000    16.696    fir_filter_i4/p_0_in[11]
     SLICE_X9Y21          FDCE                                         r  fir_filter_i4/o_data_reg[11]/D
   -------------------------------------------------------------------    -------------------
 
@@ -586,7 +586,7 @@ Slack (VIOLATED) :        -2.146ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.438    14.202    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.438    14.202    fir_filter_i4/CLK
     SLICE_X9Y21          FDCE                                         r  fir_filter_i4/o_data_reg[11]/C
                          clock pessimism              0.322    14.524    
                          clock uncertainty           -0.035    14.489    
@@ -625,11 +625,11 @@ Slack (VIOLATED) :        -2.142ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.560     4.566    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.560     4.566    fir_filter_i4/CLK
     SLICE_X9Y32          FDCE                                         r  fir_filter_i4/p_data_reg[0][13]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y32          FDCE (Prop_fdce_C_Q)         0.456     5.022 r  fir_filter_i4/p_data_reg[0][13]/Q
-                         net (fo=18, routed)          0.619     5.641    p_data_reg[0][13]
+                         net (fo=18, routed)          0.619     5.641    fir_filter_i4/p_data_reg[0][13]
     DSP48_X0Y12          DSP48E1 (Prop_dsp48e1_A[27]_PCOUT[47])
                                                       4.036     9.677 r  fir_filter_i4/RESIZE0__6/PCOUT[47]
                          net (fo=1, routed)           0.002     9.679    fir_filter_i4/RESIZE0__6_n_106
@@ -653,7 +653,7 @@ Slack (VIOLATED) :        -2.142ns  (required time - arrival time)
                          net (fo=1, routed)           0.000    16.359    fir_filter_i4/o_data_reg[6]_i_1_n_0
     SLICE_X9Y20          CARRY4 (Prop_carry4_CI_O[1])
                                                       0.334    16.693 r  fir_filter_i4/o_data_reg[10]_i_1/O[1]
-                         net (fo=1, routed)           0.000    16.693    p_0_in[8]
+                         net (fo=1, routed)           0.000    16.693    fir_filter_i4/p_0_in[8]
     SLICE_X9Y20          FDCE                                         r  fir_filter_i4/o_data_reg[8]/D
   -------------------------------------------------------------------    -------------------
 
@@ -663,7 +663,7 @@ Slack (VIOLATED) :        -2.142ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.439    14.203    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.439    14.203    fir_filter_i4/CLK
     SLICE_X9Y20          FDCE                                         r  fir_filter_i4/o_data_reg[8]/C
                          clock pessimism              0.322    14.525    
                          clock uncertainty           -0.035    14.490    
@@ -702,11 +702,11 @@ Slack (VIOLATED) :        -2.121ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.560     4.566    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.560     4.566    fir_filter_i4/CLK
     SLICE_X9Y32          FDCE                                         r  fir_filter_i4/p_data_reg[0][13]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y32          FDCE (Prop_fdce_C_Q)         0.456     5.022 r  fir_filter_i4/p_data_reg[0][13]/Q
-                         net (fo=18, routed)          0.619     5.641    p_data_reg[0][13]
+                         net (fo=18, routed)          0.619     5.641    fir_filter_i4/p_data_reg[0][13]
     DSP48_X0Y12          DSP48E1 (Prop_dsp48e1_A[27]_PCOUT[47])
                                                       4.036     9.677 r  fir_filter_i4/RESIZE0__6/PCOUT[47]
                          net (fo=1, routed)           0.002     9.679    fir_filter_i4/RESIZE0__6_n_106
@@ -730,7 +730,7 @@ Slack (VIOLATED) :        -2.121ns  (required time - arrival time)
                          net (fo=1, routed)           0.000    16.359    fir_filter_i4/o_data_reg[6]_i_1_n_0
     SLICE_X9Y20          CARRY4 (Prop_carry4_CI_O[3])
                                                       0.313    16.672 r  fir_filter_i4/o_data_reg[10]_i_1/O[3]
-                         net (fo=1, routed)           0.000    16.672    p_0_in[10]
+                         net (fo=1, routed)           0.000    16.672    fir_filter_i4/p_0_in[10]
     SLICE_X9Y20          FDCE                                         r  fir_filter_i4/o_data_reg[10]/D
   -------------------------------------------------------------------    -------------------
 
@@ -740,7 +740,7 @@ Slack (VIOLATED) :        -2.121ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.439    14.203    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.439    14.203    fir_filter_i4/CLK
     SLICE_X9Y20          FDCE                                         r  fir_filter_i4/o_data_reg[10]/C
                          clock pessimism              0.322    14.525    
                          clock uncertainty           -0.035    14.490    
@@ -779,11 +779,11 @@ Slack (VIOLATED) :        -2.047ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.560     4.566    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.560     4.566    fir_filter_i4/CLK
     SLICE_X9Y32          FDCE                                         r  fir_filter_i4/p_data_reg[0][13]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y32          FDCE (Prop_fdce_C_Q)         0.456     5.022 r  fir_filter_i4/p_data_reg[0][13]/Q
-                         net (fo=18, routed)          0.619     5.641    p_data_reg[0][13]
+                         net (fo=18, routed)          0.619     5.641    fir_filter_i4/p_data_reg[0][13]
     DSP48_X0Y12          DSP48E1 (Prop_dsp48e1_A[27]_PCOUT[47])
                                                       4.036     9.677 r  fir_filter_i4/RESIZE0__6/PCOUT[47]
                          net (fo=1, routed)           0.002     9.679    fir_filter_i4/RESIZE0__6_n_106
@@ -807,7 +807,7 @@ Slack (VIOLATED) :        -2.047ns  (required time - arrival time)
                          net (fo=1, routed)           0.000    16.359    fir_filter_i4/o_data_reg[6]_i_1_n_0
     SLICE_X9Y20          CARRY4 (Prop_carry4_CI_O[2])
                                                       0.239    16.598 r  fir_filter_i4/o_data_reg[10]_i_1/O[2]
-                         net (fo=1, routed)           0.000    16.598    p_0_in[9]
+                         net (fo=1, routed)           0.000    16.598    fir_filter_i4/p_0_in[9]
     SLICE_X9Y20          FDCE                                         r  fir_filter_i4/o_data_reg[9]/D
   -------------------------------------------------------------------    -------------------
 
@@ -817,7 +817,7 @@ Slack (VIOLATED) :        -2.047ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.439    14.203    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.439    14.203    fir_filter_i4/CLK
     SLICE_X9Y20          FDCE                                         r  fir_filter_i4/o_data_reg[9]/C
                          clock pessimism              0.322    14.525    
                          clock uncertainty           -0.035    14.490    
@@ -856,11 +856,11 @@ Slack (VIOLATED) :        -2.031ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.560     4.566    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.560     4.566    fir_filter_i4/CLK
     SLICE_X9Y32          FDCE                                         r  fir_filter_i4/p_data_reg[0][13]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y32          FDCE (Prop_fdce_C_Q)         0.456     5.022 r  fir_filter_i4/p_data_reg[0][13]/Q
-                         net (fo=18, routed)          0.619     5.641    p_data_reg[0][13]
+                         net (fo=18, routed)          0.619     5.641    fir_filter_i4/p_data_reg[0][13]
     DSP48_X0Y12          DSP48E1 (Prop_dsp48e1_A[27]_PCOUT[47])
                                                       4.036     9.677 r  fir_filter_i4/RESIZE0__6/PCOUT[47]
                          net (fo=1, routed)           0.002     9.679    fir_filter_i4/RESIZE0__6_n_106
@@ -884,7 +884,7 @@ Slack (VIOLATED) :        -2.031ns  (required time - arrival time)
                          net (fo=1, routed)           0.000    16.359    fir_filter_i4/o_data_reg[6]_i_1_n_0
     SLICE_X9Y20          CARRY4 (Prop_carry4_CI_O[0])
                                                       0.223    16.582 r  fir_filter_i4/o_data_reg[10]_i_1/O[0]
-                         net (fo=1, routed)           0.000    16.582    p_0_in[7]
+                         net (fo=1, routed)           0.000    16.582    fir_filter_i4/p_0_in[7]
     SLICE_X9Y20          FDCE                                         r  fir_filter_i4/o_data_reg[7]/D
   -------------------------------------------------------------------    -------------------
 
@@ -894,7 +894,7 @@ Slack (VIOLATED) :        -2.031ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.439    14.203    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.439    14.203    fir_filter_i4/CLK
     SLICE_X9Y20          FDCE                                         r  fir_filter_i4/o_data_reg[7]/C
                          clock pessimism              0.322    14.525    
                          clock uncertainty           -0.035    14.490    
@@ -933,11 +933,11 @@ Slack (VIOLATED) :        -2.028ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.560     4.566    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.560     4.566    fir_filter_i4/CLK
     SLICE_X9Y32          FDCE                                         r  fir_filter_i4/p_data_reg[0][13]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y32          FDCE (Prop_fdce_C_Q)         0.456     5.022 r  fir_filter_i4/p_data_reg[0][13]/Q
-                         net (fo=18, routed)          0.619     5.641    p_data_reg[0][13]
+                         net (fo=18, routed)          0.619     5.641    fir_filter_i4/p_data_reg[0][13]
     DSP48_X0Y12          DSP48E1 (Prop_dsp48e1_A[27]_PCOUT[47])
                                                       4.036     9.677 r  fir_filter_i4/RESIZE0__6/PCOUT[47]
                          net (fo=1, routed)           0.002     9.679    fir_filter_i4/RESIZE0__6_n_106
@@ -958,7 +958,7 @@ Slack (VIOLATED) :        -2.028ns  (required time - arrival time)
                          net (fo=1, routed)           0.000    16.245    fir_filter_i4/o_data_reg[2]_i_1_n_0
     SLICE_X9Y19          CARRY4 (Prop_carry4_CI_O[1])
                                                       0.334    16.579 r  fir_filter_i4/o_data_reg[6]_i_1/O[1]
-                         net (fo=1, routed)           0.000    16.579    p_0_in[4]
+                         net (fo=1, routed)           0.000    16.579    fir_filter_i4/p_0_in[4]
     SLICE_X9Y19          FDCE                                         r  fir_filter_i4/o_data_reg[4]/D
   -------------------------------------------------------------------    -------------------
 
@@ -968,7 +968,7 @@ Slack (VIOLATED) :        -2.028ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.439    14.203    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.439    14.203    fir_filter_i4/CLK
     SLICE_X9Y19          FDCE                                         r  fir_filter_i4/o_data_reg[4]/C
                          clock pessimism              0.322    14.525    
                          clock uncertainty           -0.035    14.490    
@@ -1008,7 +1008,7 @@ Slack (MET) :             0.110ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.562     1.389    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.562     1.389    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X8Y15          FDCE                                         r  dds_sine_i3/r_nco_reg[31]_rep__3/C
   -------------------------------------------------------------------    -------------------
     SLICE_X8Y15          FDCE (Prop_fdce_C_Q)         0.164     1.553 r  dds_sine_i3/r_nco_reg[31]_rep__3/Q
@@ -1022,7 +1022,7 @@ Slack (MET) :             0.110ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.869     1.943    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.869     1.943    dds_sine_i3/clk_IBUF_BUFG
     RAMB36_X0Y3          RAMB36E1                                     r  dds_sine_i3/lut_addr_reg_0/CLKARDCLK
                          clock pessimism             -0.500     1.442    
     RAMB36_X0Y3          RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[2])
@@ -1056,7 +1056,7 @@ Slack (MET) :             0.150ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.562     1.389    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.562     1.389    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X8Y15          FDCE                                         r  dds_sine_i3/r_nco_reg[31]_rep/C
   -------------------------------------------------------------------    -------------------
     SLICE_X8Y15          FDCE (Prop_fdce_C_Q)         0.164     1.553 r  dds_sine_i3/r_nco_reg[31]_rep/Q
@@ -1070,7 +1070,7 @@ Slack (MET) :             0.150ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.869     1.943    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.869     1.943    dds_sine_i3/clk_IBUF_BUFG
     RAMB36_X0Y3          RAMB36E1                                     r  dds_sine_i3/lut_addr_reg_0/CLKARDCLK
                          clock pessimism             -0.500     1.442    
     RAMB36_X0Y3          RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[13])
@@ -1104,7 +1104,7 @@ Slack (MET) :             0.156ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.562     1.389    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.562     1.389    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X8Y15          FDCE                                         r  dds_sine_i3/r_nco_reg[31]_rep__2/C
   -------------------------------------------------------------------    -------------------
     SLICE_X8Y15          FDCE (Prop_fdce_C_Q)         0.164     1.553 r  dds_sine_i3/r_nco_reg[31]_rep__2/Q
@@ -1118,7 +1118,7 @@ Slack (MET) :             0.156ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.869     1.943    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.869     1.943    dds_sine_i3/clk_IBUF_BUFG
     RAMB36_X0Y3          RAMB36E1                                     r  dds_sine_i3/lut_addr_reg_0/CLKARDCLK
                          clock pessimism             -0.500     1.442    
     RAMB36_X0Y3          RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[4])
@@ -1152,7 +1152,7 @@ Slack (MET) :             0.160ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.562     1.389    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.562     1.389    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X8Y14          FDCE                                         r  dds_sine_i3/r_nco_reg[31]_rep__1/C
   -------------------------------------------------------------------    -------------------
     SLICE_X8Y14          FDCE (Prop_fdce_C_Q)         0.164     1.553 r  dds_sine_i3/r_nco_reg[31]_rep__1/Q
@@ -1166,7 +1166,7 @@ Slack (MET) :             0.160ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.869     1.943    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.869     1.943    dds_sine_i3/clk_IBUF_BUFG
     RAMB36_X0Y3          RAMB36E1                                     r  dds_sine_i3/lut_addr_reg_0/CLKARDCLK
                          clock pessimism             -0.500     1.442    
     RAMB36_X0Y3          RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[8])
@@ -1200,11 +1200,11 @@ Slack (MET) :             0.173ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.560     1.387    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.560     1.387    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X10Y32         FDCE                                         r  dds_sine_i3/o_sine_reg[13]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X10Y32         FDCE (Prop_fdce_C_Q)         0.164     1.551 r  dds_sine_i3/o_sine_reg[13]/Q
-                         net (fo=1, routed)           0.115     1.666    sine_in_OBUF[13]
+                         net (fo=1, routed)           0.115     1.666    fir_filter_i4/D[13]
     SLICE_X9Y32          FDCE                                         r  fir_filter_i4/p_data_reg[0][13]/D
   -------------------------------------------------------------------    -------------------
 
@@ -1214,7 +1214,7 @@ Slack (MET) :             0.173ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.828     1.901    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.828     1.901    fir_filter_i4/CLK
     SLICE_X9Y32          FDCE                                         r  fir_filter_i4/p_data_reg[0][13]/C
                          clock pessimism             -0.480     1.421    
     SLICE_X9Y32          FDCE (Hold_fdce_C_D)         0.072     1.493    fir_filter_i4/p_data_reg[0][13]
@@ -1247,11 +1247,11 @@ Slack (MET) :             0.181ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.564     1.391    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.564     1.391    fir_filter_i4/CLK
     SLICE_X13Y11         FDCE                                         r  fir_filter_i4/p_data_reg[6][6]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X13Y11         FDCE (Prop_fdce_C_Q)         0.141     1.532 r  fir_filter_i4/p_data_reg[6][6]/Q
-                         net (fo=2, routed)           0.146     1.678    p_data_reg[6][6]
+                         net (fo=2, routed)           0.146     1.678    fir_filter_i4/p_data_reg[6][6]
     SLICE_X11Y11         FDCE                                         r  fir_filter_i4/p_data_reg[7][6]/D
   -------------------------------------------------------------------    -------------------
 
@@ -1261,7 +1261,7 @@ Slack (MET) :             0.181ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.834     1.907    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.834     1.907    fir_filter_i4/CLK
     SLICE_X11Y11         FDCE                                         r  fir_filter_i4/p_data_reg[7][6]/C
                          clock pessimism             -0.480     1.427    
     SLICE_X11Y11         FDCE (Hold_fdce_C_D)         0.070     1.497    fir_filter_i4/p_data_reg[7][6]
@@ -1294,11 +1294,11 @@ Slack (MET) :             0.187ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.560     1.387    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.560     1.387    fir_filter_i4/CLK
     SLICE_X11Y32         FDCE                                         r  fir_filter_i4/p_data_reg[0][9]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X11Y32         FDCE (Prop_fdce_C_Q)         0.141     1.528 r  fir_filter_i4/p_data_reg[0][9]/Q
-                         net (fo=2, routed)           0.122     1.650    p_data_reg[0][9]
+                         net (fo=2, routed)           0.122     1.650    fir_filter_i4/p_data_reg[0][9]
     SLICE_X10Y32         FDCE                                         r  fir_filter_i4/p_data_reg[1][9]/D
   -------------------------------------------------------------------    -------------------
 
@@ -1308,7 +1308,7 @@ Slack (MET) :             0.187ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.828     1.901    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.828     1.901    fir_filter_i4/CLK
     SLICE_X10Y32         FDCE                                         r  fir_filter_i4/p_data_reg[1][9]/C
                          clock pessimism             -0.501     1.400    
     SLICE_X10Y32         FDCE (Hold_fdce_C_D)         0.063     1.463    fir_filter_i4/p_data_reg[1][9]
@@ -1341,11 +1341,11 @@ Slack (MET) :             0.194ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.560     1.387    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.560     1.387    fir_filter_i4/CLK
     SLICE_X11Y32         FDCE                                         r  fir_filter_i4/p_data_reg[0][8]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X11Y32         FDCE (Prop_fdce_C_Q)         0.141     1.528 r  fir_filter_i4/p_data_reg[0][8]/Q
-                         net (fo=2, routed)           0.128     1.656    p_data_reg[0][8]
+                         net (fo=2, routed)           0.128     1.656    fir_filter_i4/p_data_reg[0][8]
     SLICE_X11Y32         FDCE                                         r  fir_filter_i4/p_data_reg[1][8]/D
   -------------------------------------------------------------------    -------------------
 
@@ -1355,7 +1355,7 @@ Slack (MET) :             0.194ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.828     1.901    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.828     1.901    fir_filter_i4/CLK
     SLICE_X11Y32         FDCE                                         r  fir_filter_i4/p_data_reg[1][8]/C
                          clock pessimism             -0.514     1.387    
     SLICE_X11Y32         FDCE (Hold_fdce_C_D)         0.075     1.462    fir_filter_i4/p_data_reg[1][8]
@@ -1388,11 +1388,11 @@ Slack (MET) :             0.201ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.564     1.391    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.564     1.391    fir_filter_i4/CLK
     SLICE_X10Y11         FDCE                                         r  fir_filter_i4/p_data_reg[6][7]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X10Y11         FDCE (Prop_fdce_C_Q)         0.164     1.555 r  fir_filter_i4/p_data_reg[6][7]/Q
-                         net (fo=2, routed)           0.122     1.677    p_data_reg[6][7]
+                         net (fo=2, routed)           0.122     1.677    fir_filter_i4/p_data_reg[6][7]
     SLICE_X11Y11         FDCE                                         r  fir_filter_i4/p_data_reg[7][7]/D
   -------------------------------------------------------------------    -------------------
 
@@ -1402,7 +1402,7 @@ Slack (MET) :             0.201ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.834     1.907    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.834     1.907    fir_filter_i4/CLK
     SLICE_X11Y11         FDCE                                         r  fir_filter_i4/p_data_reg[7][7]/C
                          clock pessimism             -0.503     1.404    
     SLICE_X11Y11         FDCE (Hold_fdce_C_D)         0.072     1.476    fir_filter_i4/p_data_reg[7][7]
@@ -1435,11 +1435,11 @@ Slack (MET) :             0.204ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.564     1.391    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.564     1.391    fir_filter_i4/CLK
     SLICE_X10Y11         FDCE                                         r  fir_filter_i4/p_data_reg[6][3]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X10Y11         FDCE (Prop_fdce_C_Q)         0.164     1.555 r  fir_filter_i4/p_data_reg[6][3]/Q
-                         net (fo=2, routed)           0.128     1.683    p_data_reg[6][3]
+                         net (fo=2, routed)           0.128     1.683    fir_filter_i4/p_data_reg[6][3]
     SLICE_X11Y10         FDCE                                         r  fir_filter_i4/p_data_reg[7][3]/D
   -------------------------------------------------------------------    -------------------
 
@@ -1449,7 +1449,7 @@ Slack (MET) :             0.204ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.834     1.907    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.834     1.907    fir_filter_i4/CLK
     SLICE_X11Y10         FDCE                                         r  fir_filter_i4/p_data_reg[7][3]/C
                          clock pessimism             -0.500     1.407    
     SLICE_X11Y10         FDCE (Hold_fdce_C_D)         0.072     1.479    fir_filter_i4/p_data_reg[7][3]
@@ -1547,9 +1547,9 @@ Slack (MET) :             7.949ns  (required time - arrival time)
     V14                                               0.000     0.000 r  addr_phase[1] (IN)
                          net (fo=0)                   0.000     0.000    addr_phase[1]
     V14                  IBUF (Prop_ibuf_I_O)         0.931     0.931 r  addr_phase_IBUF[1]_inst/O
-                         net (fo=1, routed)           5.284     6.215    addr_phase_IBUF[1]
-    SLICE_X0Y2           LUT2 (Prop_lut2_I0_O)        0.124     6.339 r  r_start_phase[31]_i_1/O
-                         net (fo=1, routed)           0.000     6.339    start_phase[31]
+                         net (fo=1, routed)           5.284     6.215    dds_sine_i3/addr_phase_IBUF[1]
+    SLICE_X0Y2           LUT2 (Prop_lut2_I0_O)        0.124     6.339 r  dds_sine_i3/r_start_phase[31]_i_1/O
+                         net (fo=1, routed)           0.000     6.339    dds_sine_i3/start_phase[31]
     SLICE_X0Y2           FDCE                                         r  dds_sine_i3/r_start_phase_reg[31]/D
   -------------------------------------------------------------------    -------------------
 
@@ -1559,7 +1559,7 @@ Slack (MET) :             7.949ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.520    14.284    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.520    14.284    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X0Y2           FDCE                                         r  dds_sine_i3/r_start_phase_reg[31]/C
                          clock pessimism              0.000    14.284    
                          clock uncertainty           -0.025    14.259    
@@ -1608,9 +1608,9 @@ Slack (MET) :             0.229ns  (arrival time - required time)
     V14                                               0.000     0.000 r  addr_phase[1] (IN)
                          net (fo=0)                   0.000     0.000    addr_phase[1]
     V14                  IBUF (Prop_ibuf_I_O)         0.160     0.160 r  addr_phase_IBUF[1]_inst/O
-                         net (fo=1, routed)           2.080     2.240    addr_phase_IBUF[1]
-    SLICE_X0Y2           LUT2 (Prop_lut2_I0_O)        0.045     2.285 r  r_start_phase[31]_i_1/O
-                         net (fo=1, routed)           0.000     2.285    start_phase[31]
+                         net (fo=1, routed)           2.080     2.240    dds_sine_i3/addr_phase_IBUF[1]
+    SLICE_X0Y2           LUT2 (Prop_lut2_I0_O)        0.045     2.285 r  dds_sine_i3/r_start_phase[31]_i_1/O
+                         net (fo=1, routed)           0.000     2.285    dds_sine_i3/start_phase[31]
     SLICE_X0Y2           FDCE                                         r  dds_sine_i3/r_start_phase_reg[31]/D
   -------------------------------------------------------------------    -------------------
 
@@ -1620,7 +1620,7 @@ Slack (MET) :             0.229ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.867     1.940    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.867     1.940    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X0Y2           FDCE                                         r  dds_sine_i3/r_start_phase_reg[31]/C
                          clock pessimism              0.000     1.940    
                          clock uncertainty            0.025     1.965    
@@ -1676,7 +1676,7 @@ Slack (MET) :             0.001ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.557     4.563    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.557     4.563    fir_filter_i4/CLK
     SLICE_X9Y19          FDCE                                         r  fir_filter_i4/o_data_reg[3]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y19          FDCE (Prop_fdce_C_Q)         0.456     5.019 r  fir_filter_i4/o_data_reg[3]/Q
@@ -1729,7 +1729,7 @@ Slack (MET) :             0.004ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.558     4.564    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.558     4.564    fir_filter_i4/CLK
     SLICE_X9Y18          FDCE                                         r  fir_filter_i4/o_data_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y18          FDCE (Prop_fdce_C_Q)         0.456     5.020 r  fir_filter_i4/o_data_reg[1]/Q
@@ -1782,7 +1782,7 @@ Slack (MET) :             0.006ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.558     4.564    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.558     4.564    fir_filter_i4/CLK
     SLICE_X9Y18          FDCE                                         r  fir_filter_i4/o_data_reg[0]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y18          FDCE (Prop_fdce_C_Q)         0.456     5.020 r  fir_filter_i4/o_data_reg[0]/Q
@@ -1835,7 +1835,7 @@ Slack (MET) :             0.008ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.558     4.564    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.558     4.564    fir_filter_i4/CLK
     SLICE_X9Y18          FDCE                                         r  fir_filter_i4/o_data_reg[2]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y18          FDCE (Prop_fdce_C_Q)         0.456     5.020 r  fir_filter_i4/o_data_reg[2]/Q
@@ -1888,7 +1888,7 @@ Slack (MET) :             0.157ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.557     4.563    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.557     4.563    fir_filter_i4/CLK
     SLICE_X9Y19          FDCE                                         r  fir_filter_i4/o_data_reg[4]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y19          FDCE (Prop_fdce_C_Q)         0.456     5.019 r  fir_filter_i4/o_data_reg[4]/Q
@@ -1941,7 +1941,7 @@ Slack (MET) :             0.163ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.557     4.563    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.557     4.563    fir_filter_i4/CLK
     SLICE_X9Y19          FDCE                                         r  fir_filter_i4/o_data_reg[6]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y19          FDCE (Prop_fdce_C_Q)         0.456     5.019 r  fir_filter_i4/o_data_reg[6]/Q
@@ -1994,7 +1994,7 @@ Slack (MET) :             0.165ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.557     4.563    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.557     4.563    fir_filter_i4/CLK
     SLICE_X9Y19          FDCE                                         r  fir_filter_i4/o_data_reg[5]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y19          FDCE (Prop_fdce_C_Q)         0.456     5.019 r  fir_filter_i4/o_data_reg[5]/Q
@@ -2047,7 +2047,7 @@ Slack (MET) :             0.195ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.556     4.562    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.556     4.562    fir_filter_i4/CLK
     SLICE_X9Y20          FDCE                                         r  fir_filter_i4/o_data_reg[7]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y20          FDCE (Prop_fdce_C_Q)         0.456     5.018 r  fir_filter_i4/o_data_reg[7]/Q
@@ -2100,7 +2100,7 @@ Slack (MET) :             0.200ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.556     4.562    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.556     4.562    fir_filter_i4/CLK
     SLICE_X9Y20          FDCE                                         r  fir_filter_i4/o_data_reg[8]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y20          FDCE (Prop_fdce_C_Q)         0.456     5.018 r  fir_filter_i4/o_data_reg[8]/Q
@@ -2153,7 +2153,7 @@ Slack (MET) :             0.232ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     2.910    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.556     4.562    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.556     4.562    fir_filter_i4/CLK
     SLICE_X9Y20          FDCE                                         r  fir_filter_i4/o_data_reg[10]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y20          FDCE (Prop_fdce_C_Q)         0.456     5.018 r  fir_filter_i4/o_data_reg[10]/Q
@@ -2212,11 +2212,11 @@ Slack (MET) :             2.943ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.585     1.412    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.585     1.412    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X0Y27          FDCE                                         r  dds_sine_i3/o_sine_reg[7]_lopt_replica/C
   -------------------------------------------------------------------    -------------------
     SLICE_X0Y27          FDCE (Prop_fdce_C_Q)         0.141     1.553 r  dds_sine_i3/o_sine_reg[7]_lopt_replica/Q
-                         net (fo=1, routed)           0.286     1.839    dds_sine_i3/o_sine_reg[7]_lopt_replica_1
+                         net (fo=1, routed)           0.286     1.839    lopt_11
     M19                  OBUF (Prop_obuf_I_O)         1.129     2.968 r  sine_in_OBUF[7]_inst/O
                          net (fo=0)                   0.000     2.968    sine_in[7]
     M19                                                               r  sine_in[7] (OUT)
@@ -2265,11 +2265,11 @@ Slack (MET) :             2.948ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.590     1.417    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.590     1.417    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X0Y33          FDCE                                         r  dds_sine_i3/o_sine_reg[12]_lopt_replica/C
   -------------------------------------------------------------------    -------------------
     SLICE_X0Y33          FDCE (Prop_fdce_C_Q)         0.141     1.558 r  dds_sine_i3/o_sine_reg[12]_lopt_replica/Q
-                         net (fo=1, routed)           0.286     1.844    dds_sine_i3/o_sine_reg[12]_lopt_replica_1
+                         net (fo=1, routed)           0.286     1.844    lopt_3
     K18                  OBUF (Prop_obuf_I_O)         1.129     2.973 r  sine_in_OBUF[12]_inst/O
                          net (fo=0)                   0.000     2.973    sine_in[12]
     K18                                                               r  sine_in[12] (OUT)
@@ -2318,11 +2318,11 @@ Slack (MET) :             2.951ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.583     1.410    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.583     1.410    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X0Y23          FDCE                                         r  dds_sine_i3/o_sine_reg[4]_lopt_replica/C
   -------------------------------------------------------------------    -------------------
     SLICE_X0Y23          FDCE (Prop_fdce_C_Q)         0.141     1.551 r  dds_sine_i3/o_sine_reg[4]_lopt_replica/Q
-                         net (fo=1, routed)           0.323     1.874    dds_sine_i3/o_sine_reg[4]_lopt_replica_1
+                         net (fo=1, routed)           0.323     1.874    lopt_8
     N17                  OBUF (Prop_obuf_I_O)         1.103     2.976 r  sine_in_OBUF[4]_inst/O
                          net (fo=0)                   0.000     2.976    sine_in[4]
     N17                                                               r  sine_in[4] (OUT)
@@ -2371,11 +2371,11 @@ Slack (MET) :             2.958ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.582     1.409    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.582     1.409    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X0Y25          FDCE                                         r  dds_sine_i3/o_sine_reg[5]_lopt_replica/C
   -------------------------------------------------------------------    -------------------
     SLICE_X0Y25          FDCE (Prop_fdce_C_Q)         0.141     1.550 r  dds_sine_i3/o_sine_reg[5]_lopt_replica/Q
-                         net (fo=1, routed)           0.286     1.836    dds_sine_i3/o_sine_reg[5]_lopt_replica_1
+                         net (fo=1, routed)           0.286     1.836    lopt_9
     K17                  OBUF (Prop_obuf_I_O)         1.147     2.983 r  sine_in_OBUF[5]_inst/O
                          net (fo=0)                   0.000     2.983    sine_in[5]
     K17                                                               r  sine_in[5] (OUT)
@@ -2424,11 +2424,11 @@ Slack (MET) :             2.958ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.585     1.412    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.585     1.412    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X0Y22          FDCE                                         r  dds_sine_i3/o_sine_reg[3]_lopt_replica/C
   -------------------------------------------------------------------    -------------------
     SLICE_X0Y22          FDCE (Prop_fdce_C_Q)         0.141     1.553 r  dds_sine_i3/o_sine_reg[3]_lopt_replica/Q
-                         net (fo=1, routed)           0.323     1.876    dds_sine_i3/o_sine_reg[3]_lopt_replica_1
+                         net (fo=1, routed)           0.323     1.876    lopt_7
     P17                  OBUF (Prop_obuf_I_O)         1.107     2.983 r  sine_in_OBUF[3]_inst/O
                          net (fo=0)                   0.000     2.983    sine_in[3]
     P17                                                               r  sine_in[3] (OUT)
@@ -2477,11 +2477,11 @@ Slack (MET) :             2.959ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.588     1.415    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.588     1.415    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X0Y31          FDCE                                         r  dds_sine_i3/o_sine_reg[11]_lopt_replica/C
   -------------------------------------------------------------------    -------------------
     SLICE_X0Y31          FDCE (Prop_fdce_C_Q)         0.141     1.556 r  dds_sine_i3/o_sine_reg[11]_lopt_replica/Q
-                         net (fo=1, routed)           0.323     1.879    dds_sine_i3/o_sine_reg[11]_lopt_replica_1
+                         net (fo=1, routed)           0.323     1.879    lopt_2
     N18                  OBUF (Prop_obuf_I_O)         1.106     2.984 r  sine_in_OBUF[11]_inst/O
                          net (fo=0)                   0.000     2.984    sine_in[11]
     N18                                                               r  sine_in[11] (OUT)
@@ -2530,11 +2530,11 @@ Slack (MET) :             2.962ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.586     1.413    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.586     1.413    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X0Y20          FDCE                                         r  dds_sine_i3/o_sine_reg[1]_lopt_replica/C
   -------------------------------------------------------------------    -------------------
     SLICE_X0Y20          FDCE (Prop_fdce_C_Q)         0.141     1.554 r  dds_sine_i3/o_sine_reg[1]_lopt_replica/Q
-                         net (fo=1, routed)           0.323     1.877    dds_sine_i3/o_sine_reg[1]_lopt_replica_1
+                         net (fo=1, routed)           0.323     1.877    lopt_5
     R18                  OBUF (Prop_obuf_I_O)         1.111     2.987 r  sine_in_OBUF[1]_inst/O
                          net (fo=0)                   0.000     2.987    sine_in[1]
     R18                                                               r  sine_in[1] (OUT)
@@ -2583,11 +2583,11 @@ Slack (MET) :             2.964ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.585     1.412    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.585     1.412    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X0Y28          FDCE                                         r  dds_sine_i3/o_sine_reg[8]_lopt_replica/C
   -------------------------------------------------------------------    -------------------
     SLICE_X0Y28          FDCE (Prop_fdce_C_Q)         0.141     1.553 r  dds_sine_i3/o_sine_reg[8]_lopt_replica/Q
-                         net (fo=1, routed)           0.323     1.876    dds_sine_i3/o_sine_reg[8]_lopt_replica_1
+                         net (fo=1, routed)           0.323     1.876    lopt_12
     R19                  OBUF (Prop_obuf_I_O)         1.113     2.989 r  sine_in_OBUF[8]_inst/O
                          net (fo=0)                   0.000     2.989    sine_in[8]
     R19                                                               r  sine_in[8] (OUT)
@@ -2636,11 +2636,11 @@ Slack (MET) :             2.965ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.587     1.414    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.587     1.414    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X0Y30          FDCE                                         r  dds_sine_i3/o_sine_reg[10]_lopt_replica/C
   -------------------------------------------------------------------    -------------------
     SLICE_X0Y30          FDCE (Prop_fdce_C_Q)         0.141     1.555 r  dds_sine_i3/o_sine_reg[10]_lopt_replica/Q
-                         net (fo=1, routed)           0.323     1.878    dds_sine_i3/o_sine_reg[10]_lopt_replica_1
+                         net (fo=1, routed)           0.323     1.878    lopt_1
     N19                  OBUF (Prop_obuf_I_O)         1.113     2.990 r  sine_in_OBUF[10]_inst/O
                          net (fo=0)                   0.000     2.990    sine_in[10]
     N19                                                               r  sine_in[10] (OUT)
@@ -2689,11 +2689,11 @@ Slack (MET) :             2.973ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.801    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.590     1.417    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.590     1.417    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X0Y33          FDCE                                         r  dds_sine_i3/o_sine_reg[13]_lopt_replica/C
   -------------------------------------------------------------------    -------------------
     SLICE_X0Y33          FDCE (Prop_fdce_C_Q)         0.141     1.558 r  dds_sine_i3/o_sine_reg[13]_lopt_replica/Q
-                         net (fo=1, routed)           0.327     1.885    dds_sine_i3/o_sine_reg[13]_lopt_replica_1
+                         net (fo=1, routed)           0.327     1.885    lopt_4
     L18                  OBUF (Prop_obuf_I_O)         1.114     2.998 r  sine_in_OBUF[13]_inst/O
                          net (fo=0)                   0.000     2.998    sine_in[13]
     L18                                                               r  sine_in[13] (OUT)
@@ -2756,9 +2756,9 @@ Slack (MET) :             2.716ns  (required time - arrival time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           3.671     4.605    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         6.317    11.046    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           3.671     4.605    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         6.317    11.046    fir_filter_i4/rstb
     SLICE_X13Y30         FDCE                                         f  fir_filter_i4/p_data_reg[1][0]/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -2768,7 +2768,7 @@ Slack (MET) :             2.716ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.439    14.203    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.439    14.203    fir_filter_i4/CLK
     SLICE_X13Y30         FDCE                                         r  fir_filter_i4/p_data_reg[1][0]/C
                          clock pessimism              0.000    14.203    
                          clock uncertainty           -0.035    14.168    
@@ -2807,9 +2807,9 @@ Slack (MET) :             2.766ns  (required time - arrival time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           3.671     4.605    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         6.268    10.997    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           3.671     4.605    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         6.268    10.997    fir_filter_i4/rstb
     SLICE_X13Y31         FDCE                                         f  fir_filter_i4/p_data_reg[1][5]/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -2819,7 +2819,7 @@ Slack (MET) :             2.766ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.440    14.204    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.440    14.204    fir_filter_i4/CLK
     SLICE_X13Y31         FDCE                                         r  fir_filter_i4/p_data_reg[1][5]/C
                          clock pessimism              0.000    14.204    
                          clock uncertainty           -0.035    14.169    
@@ -2858,9 +2858,9 @@ Slack (MET) :             3.041ns  (required time - arrival time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           3.671     4.605    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         5.995    10.724    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           3.671     4.605    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         5.995    10.724    fir_filter_i4/rstb
     SLICE_X9Y32          FDCE                                         f  fir_filter_i4/p_data_reg[0][13]/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -2870,7 +2870,7 @@ Slack (MET) :             3.041ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.442    14.206    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.442    14.206    fir_filter_i4/CLK
     SLICE_X9Y32          FDCE                                         r  fir_filter_i4/p_data_reg[0][13]/C
                          clock pessimism              0.000    14.206    
                          clock uncertainty           -0.035    14.171    
@@ -2909,9 +2909,9 @@ Slack (MET) :             3.057ns  (required time - arrival time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           3.671     4.605    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         5.980    10.709    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           3.671     4.605    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         5.980    10.709    fir_filter_i4/rstb
     SLICE_X13Y32         FDCE                                         f  fir_filter_i4/p_data_reg[1][13]/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -2921,7 +2921,7 @@ Slack (MET) :             3.057ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.442    14.206    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.442    14.206    fir_filter_i4/CLK
     SLICE_X13Y32         FDCE                                         r  fir_filter_i4/p_data_reg[1][13]/C
                          clock pessimism              0.000    14.206    
                          clock uncertainty           -0.035    14.171    
@@ -2960,9 +2960,9 @@ Slack (MET) :             3.156ns  (required time - arrival time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           3.671     4.605    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         5.967    10.696    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           3.671     4.605    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         5.967    10.696    dds_sine_i3/o_sine_reg[0]_0
     SLICE_X8Y33          FDCE                                         f  dds_sine_i3/o_sine_reg[12]/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -2972,7 +2972,7 @@ Slack (MET) :             3.156ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.443    14.207    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.443    14.207    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X8Y33          FDCE                                         r  dds_sine_i3/o_sine_reg[12]/C
                          clock pessimism              0.000    14.207    
                          clock uncertainty           -0.035    14.172    
@@ -3011,9 +3011,9 @@ Slack (MET) :             3.219ns  (required time - arrival time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           3.671     4.605    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         5.820    10.549    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           3.671     4.605    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         5.820    10.549    fir_filter_i4/rstb
     SLICE_X11Y33         FDCE                                         f  fir_filter_i4/p_data_reg[0][12]/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -3023,7 +3023,7 @@ Slack (MET) :             3.219ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.444    14.208    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.444    14.208    fir_filter_i4/CLK
     SLICE_X11Y33         FDCE                                         r  fir_filter_i4/p_data_reg[0][12]/C
                          clock pessimism              0.000    14.208    
                          clock uncertainty           -0.035    14.173    
@@ -3062,9 +3062,9 @@ Slack (MET) :             3.219ns  (required time - arrival time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           3.671     4.605    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         5.820    10.549    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           3.671     4.605    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         5.820    10.549    fir_filter_i4/rstb
     SLICE_X11Y33         FDCE                                         f  fir_filter_i4/p_data_reg[1][12]/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -3074,7 +3074,7 @@ Slack (MET) :             3.219ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.444    14.208    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.444    14.208    fir_filter_i4/CLK
     SLICE_X11Y33         FDCE                                         r  fir_filter_i4/p_data_reg[1][12]/C
                          clock pessimism              0.000    14.208    
                          clock uncertainty           -0.035    14.173    
@@ -3113,9 +3113,9 @@ Slack (MET) :             3.356ns  (required time - arrival time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           3.671     4.605    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         5.681    10.411    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           3.671     4.605    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         5.681    10.411    fir_filter_i4/rstb
     SLICE_X11Y32         FDCE                                         f  fir_filter_i4/p_data_reg[0][8]/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -3125,7 +3125,7 @@ Slack (MET) :             3.356ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.443    14.207    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.443    14.207    fir_filter_i4/CLK
     SLICE_X11Y32         FDCE                                         r  fir_filter_i4/p_data_reg[0][8]/C
                          clock pessimism              0.000    14.207    
                          clock uncertainty           -0.035    14.172    
@@ -3164,9 +3164,9 @@ Slack (MET) :             3.356ns  (required time - arrival time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           3.671     4.605    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         5.681    10.411    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           3.671     4.605    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         5.681    10.411    fir_filter_i4/rstb
     SLICE_X11Y32         FDCE                                         f  fir_filter_i4/p_data_reg[0][9]/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -3176,7 +3176,7 @@ Slack (MET) :             3.356ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.443    14.207    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.443    14.207    fir_filter_i4/CLK
     SLICE_X11Y32         FDCE                                         r  fir_filter_i4/p_data_reg[0][9]/C
                          clock pessimism              0.000    14.207    
                          clock uncertainty           -0.035    14.172    
@@ -3215,9 +3215,9 @@ Slack (MET) :             3.356ns  (required time - arrival time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           3.671     4.605    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         5.681    10.411    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           3.671     4.605    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.124     4.729 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         5.681    10.411    fir_filter_i4/rstb
     SLICE_X11Y32         FDCE                                         f  fir_filter_i4/p_data_reg[1][10]/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -3227,7 +3227,7 @@ Slack (MET) :             3.356ns  (required time - arrival time)
     M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    12.673    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         1.443    14.207    clk_IBUF_BUFG
+                         net (fo=170, routed)         1.443    14.207    fir_filter_i4/CLK
     SLICE_X11Y32         FDCE                                         r  fir_filter_i4/p_data_reg[1][10]/C
                          clock pessimism              0.000    14.207    
                          clock uncertainty           -0.035    14.172    
@@ -3272,9 +3272,9 @@ Slack (MET) :             0.748ns  (arrival time - required time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           1.423     1.587    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         0.996     2.628    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           1.423     1.587    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         0.996     2.628    dds_sine_i3/o_sine_reg[0]_0
     SLICE_X0Y6           FDPE                                         f  dds_sine_i3/r_sync_reset_reg/PRE
   -------------------------------------------------------------------    -------------------
 
@@ -3284,7 +3284,7 @@ Slack (MET) :             0.748ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.866     1.939    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.866     1.939    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X0Y6           FDPE                                         r  dds_sine_i3/r_sync_reset_reg/C
                          clock pessimism              0.000     1.939    
                          clock uncertainty            0.035     1.974    
@@ -3323,9 +3323,9 @@ Slack (MET) :             0.756ns  (arrival time - required time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           1.423     1.587    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         1.008     2.639    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           1.423     1.587    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         1.008     2.639    dds_sine_i3/o_sine_reg[0]_0
     SLICE_X0Y2           FDCE                                         f  dds_sine_i3/r_start_phase_reg[31]/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -3335,7 +3335,7 @@ Slack (MET) :             0.756ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.867     1.940    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.867     1.940    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X0Y2           FDCE                                         r  dds_sine_i3/r_start_phase_reg[31]/C
                          clock pessimism              0.000     1.940    
                          clock uncertainty            0.035     1.975    
@@ -3374,9 +3374,9 @@ Slack (MET) :             0.947ns  (arrival time - required time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           1.423     1.587    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         1.189     2.820    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           1.423     1.587    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         1.189     2.820    dds_sine_i3/o_sine_reg[0]_0
     SLICE_X0Y18          FDCE                                         f  dds_sine_i3/o_sine_reg[0]_lopt_replica/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -3386,7 +3386,7 @@ Slack (MET) :             0.947ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.857     1.930    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.857     1.930    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X0Y18          FDCE                                         r  dds_sine_i3/o_sine_reg[0]_lopt_replica/C
                          clock pessimism              0.000     1.930    
                          clock uncertainty            0.035     1.965    
@@ -3425,9 +3425,9 @@ Slack (MET) :             1.068ns  (arrival time - required time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           1.423     1.587    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         1.308     2.939    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           1.423     1.587    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         1.308     2.939    dds_sine_i3/o_sine_reg[0]_0
     SLICE_X0Y20          FDCE                                         f  dds_sine_i3/o_sine_reg[1]_lopt_replica/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -3437,7 +3437,7 @@ Slack (MET) :             1.068ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.855     1.928    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.855     1.928    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X0Y20          FDCE                                         r  dds_sine_i3/o_sine_reg[1]_lopt_replica/C
                          clock pessimism              0.000     1.928    
                          clock uncertainty            0.035     1.963    
@@ -3476,9 +3476,9 @@ Slack (MET) :             1.132ns  (arrival time - required time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           1.423     1.587    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         1.371     3.003    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           1.423     1.587    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         1.371     3.003    dds_sine_i3/o_sine_reg[0]_0
     SLICE_X0Y21          FDCE                                         f  dds_sine_i3/o_sine_reg[2]_lopt_replica/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -3488,7 +3488,7 @@ Slack (MET) :             1.132ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.854     1.927    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.854     1.927    dds_sine_i3/clk_IBUF_BUFG
     SLICE_X0Y21          FDCE                                         r  dds_sine_i3/o_sine_reg[2]_lopt_replica/C
                          clock pessimism              0.000     1.927    
                          clock uncertainty            0.035     1.962    
@@ -3527,9 +3527,9 @@ Slack (MET) :             1.142ns  (arrival time - required time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           1.423     1.587    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         1.384     3.016    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           1.423     1.587    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         1.384     3.016    fir_filter_i4/rstb
     SLICE_X10Y12         FDCE                                         f  fir_filter_i4/p_data_reg[6][10]/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -3539,7 +3539,7 @@ Slack (MET) :             1.142ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.832     1.905    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.832     1.905    fir_filter_i4/CLK
     SLICE_X10Y12         FDCE                                         r  fir_filter_i4/p_data_reg[6][10]/C
                          clock pessimism              0.000     1.905    
                          clock uncertainty            0.035     1.940    
@@ -3578,9 +3578,9 @@ Slack (MET) :             1.142ns  (arrival time - required time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           1.423     1.587    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         1.384     3.016    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           1.423     1.587    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         1.384     3.016    fir_filter_i4/rstb
     SLICE_X10Y12         FDCE                                         f  fir_filter_i4/p_data_reg[6][11]/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -3590,7 +3590,7 @@ Slack (MET) :             1.142ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.832     1.905    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.832     1.905    fir_filter_i4/CLK
     SLICE_X10Y12         FDCE                                         r  fir_filter_i4/p_data_reg[6][11]/C
                          clock pessimism              0.000     1.905    
                          clock uncertainty            0.035     1.940    
@@ -3629,9 +3629,9 @@ Slack (MET) :             1.142ns  (arrival time - required time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           1.423     1.587    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         1.384     3.016    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           1.423     1.587    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         1.384     3.016    fir_filter_i4/rstb
     SLICE_X10Y12         FDCE                                         f  fir_filter_i4/p_data_reg[6][8]/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -3641,7 +3641,7 @@ Slack (MET) :             1.142ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.832     1.905    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.832     1.905    fir_filter_i4/CLK
     SLICE_X10Y12         FDCE                                         r  fir_filter_i4/p_data_reg[6][8]/C
                          clock pessimism              0.000     1.905    
                          clock uncertainty            0.035     1.940    
@@ -3680,9 +3680,9 @@ Slack (MET) :             1.167ns  (arrival time - required time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           1.423     1.587    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         1.384     3.016    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           1.423     1.587    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         1.384     3.016    fir_filter_i4/rstb
     SLICE_X11Y12         FDCE                                         f  fir_filter_i4/p_data_reg[7][10]/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -3692,7 +3692,7 @@ Slack (MET) :             1.167ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.832     1.905    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.832     1.905    fir_filter_i4/CLK
     SLICE_X11Y12         FDCE                                         r  fir_filter_i4/p_data_reg[7][10]/C
                          clock pessimism              0.000     1.905    
                          clock uncertainty            0.035     1.940    
@@ -3731,9 +3731,9 @@ Slack (MET) :             1.167ns  (arrival time - required time)
     V13                                               0.000     0.000 r  rstb (IN)
                          net (fo=0)                   0.000     0.000    rstb
     V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 r  rstb_IBUF_inst/O
-                         net (fo=1, routed)           1.423     1.587    rstb_IBUF
-    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  r_start_phase[31]_i_2/O
-                         net (fo=166, routed)         1.384     3.016    r_start_phase[31]_i_2_n_0
+                         net (fo=1, routed)           1.423     1.587    fir_filter_i4/rstb_IBUF
+    SLICE_X0Y2           LUT1 (Prop_lut1_I0_O)        0.045     1.632 f  fir_filter_i4/r_start_phase[31]_i_2/O
+                         net (fo=166, routed)         1.384     3.016    fir_filter_i4/rstb
     SLICE_X11Y12         FDCE                                         f  fir_filter_i4/p_data_reg[7][11]/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -3743,7 +3743,7 @@ Slack (MET) :             1.167ns  (arrival time - required time)
     M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.044    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
-                         net (fo=170, routed)         0.832     1.905    clk_IBUF_BUFG
+                         net (fo=170, routed)         0.832     1.905    fir_filter_i4/CLK
     SLICE_X11Y12         FDCE                                         r  fir_filter_i4/p_data_reg[7][11]/C
                          clock pessimism              0.000     1.905    
                          clock uncertainty            0.035     1.940    

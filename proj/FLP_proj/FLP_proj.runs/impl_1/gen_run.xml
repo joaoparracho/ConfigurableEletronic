@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1585856090">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1586340899">
   <File Type="BITSTR-BMM" Name="fir8_test_bd.bmm"/>
   <File Type="ROUTE-PWR" Name="fir8_test_power_routed.rpt"/>
   <File Type="PA-TCL" Name="fir8_test.tcl"/>

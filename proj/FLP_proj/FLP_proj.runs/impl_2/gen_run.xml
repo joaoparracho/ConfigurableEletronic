@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_2" LaunchPart="xc7a35tcpg236-1" LaunchTime="1585855717">
-  <File Type="BITSTR-BMM" Name="fir8_test_bd.bmm"/>
+<GenRun Id="impl_2" LaunchPart="xc7a35tcpg236-1" LaunchTime="1586344035">
   <File Type="ROUTE-PWR" Name="fir8_test_power_routed.rpt"/>
   <File Type="PA-TCL" Name="fir8_test.tcl"/>
-  <File Type="OPT-DCP" Name="fir8_test_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="fir8_test_bd.bmm"/>
   <File Type="ROUTE-PWR-SUM" Name="fir8_test_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="fir8_test_reports.tcl"/>
+  <File Type="OPT-DCP" Name="fir8_test_opt.dcp"/>
   <File Type="OPT-DRC" Name="fir8_test_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="fir8_test.hwdef"/>
   <File Type="PWROPT-DCP" Name="fir8_test_pwropt.dcp"/>
@@ -24,21 +24,21 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="fir8_test_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="fir8_test_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="fir8_test_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="fir8_test.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="fir8_test_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="fir8_test.mmi"/>
+  <File Type="BITSTR-LTX" Name="fir8_test.ltx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="fir8_test_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="fir8_test.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="fir8_test_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="fir8_test.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="fir8_test_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="fir8_test.sysdef"/>
   <File Type="ROUTE-PWR-RPX" Name="fir8_test_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="fir8_test_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="fir8_test_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="fir8_test_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="fir8_test_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="fir8_test_timing_summary_routed.rpx"/>
-  <File Type="RDI-RDI" Name="fir8_test.vdi"/>
   <File Type="ROUTE-CLK" Name="fir8_test_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="fir8_test.vdi"/>
   <File Type="ROUTE-BUS-SKEW" Name="fir8_test_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="fir8_test_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="fir8_test_bus_skew_routed.rpx"/>
@@ -49,8 +49,8 @@
   <File Type="BITSTR-NKY" Name="fir8_test.nky"/>
   <File Type="PDI-FILE" Name="fir8_test.pdi"/>
   <File Type="RCFI_FILE" Name="fir8_test.rcfi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="CFI_FILE" Name="fir8_test.cfi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RNPI_FILE" Name="fir8_test.rnpi"/>
   <File Type="NPI_FILE" Name="fir8_test.npi"/>
   <File Type="RBD_FILE" Name="fir8_test.rbd"/>

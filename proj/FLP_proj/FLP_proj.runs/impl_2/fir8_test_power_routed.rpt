@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Thu Apr  2 20:29:56 2020
-| Host             : Anastacio running 64-bit major release  (build 9200)
+| Date             : Wed Apr  8 12:11:49 2020
+| Host             : LAPTOP-771IFLK3 running 64-bit major release  (build 9200)
 | Command          : report_power -file fir8_test_power_routed.rpt -pb fir8_test_power_summary_routed.pb -rpx fir8_test_power_routed.rpx
 | Design           : fir8_test
 | Device           : xc7a35tcpg236-1
@@ -53,11 +53,11 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        4 |       --- |             --- |
-| Slice Logic    |    <0.001 |      204 |       --- |             --- |
+| Slice Logic    |    <0.001 |      206 |       --- |             --- |
 |   LUT as Logic |    <0.001 |       26 |     20800 |            0.13 |
 |   Register     |    <0.001 |      166 |     41600 |            0.40 |
 |   CARRY4       |    <0.001 |        7 |      8150 |            0.09 |
-|   Others       |     0.000 |        4 |       --- |             --- |
+|   Others       |     0.000 |        6 |       --- |             --- |
 | Signals        |     0.003 |      573 |       --- |             --- |
 | Block RAM      |     0.007 |      3.5 |        50 |            7.00 |
 | DSPs           |     0.007 |       10 |        90 |           11.11 |
@@ -139,10 +139,12 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-----------+-----------+
-| Name      | Power (W) |
-+-----------+-----------+
-| fir8_test |     0.045 |
-+-----------+-----------+
++-----------------+-----------+
+| Name            | Power (W) |
++-----------------+-----------+
+| fir8_test       |     0.045 |
+|   dds_sine_i3   |     0.008 |
+|   fir_filter_i4 |     0.012 |
++-----------------+-----------+
 
 
