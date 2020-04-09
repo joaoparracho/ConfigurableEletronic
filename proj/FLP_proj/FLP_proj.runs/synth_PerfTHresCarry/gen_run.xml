@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_PerfTHresCarry" LaunchPart="xc7a35tcpg236-1" LaunchTime="1586203249">
+<GenRun Id="synth_PerfTHresCarry" LaunchPart="xc7a35tcpg236-1" LaunchTime="1586457770">
   <File Type="PA-TCL" Name="fir8_test.tcl"/>
   <File Type="REPORTS-TCL" Name="fir8_test_reports.tcl"/>
   <File Type="RDS-RDS" Name="fir8_test.vds"/>
@@ -65,6 +65,7 @@
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../P1_Sources/fir8_test_timing.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -77,13 +78,13 @@
   <Strategy Version="1" Minor="2">
     <StratHandle Name="Flow_PerfOptimized_high" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design">
-      <Option Id="ResourceSharing">2</Option>
-      <Option Id="RepFanoutThreshold">400</Option>
-      <Option Id="Directive">7</Option>
-      <Option Id="NoCombineLuts">1</Option>
-      <Option Id="ShregMinSize">5</Option>
       <Option Id="FsmExtraction">1</Option>
+      <Option Id="NoCombineLuts">1</Option>
+      <Option Id="ResourceSharing">2</Option>
+      <Option Id="ShregMinSize">5</Option>
+      <Option Id="RepFanoutThreshold">400</Option>
       <Option Id="KeepEquivalentRegisters">1</Option>
+      <Option Id="Directive">7</Option>
     </Step>
   </Strategy>
 </GenRun>

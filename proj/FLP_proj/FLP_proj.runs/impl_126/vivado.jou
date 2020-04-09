@@ -2,11 +2,11 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Apr  8 12:57:14 2020
-# Process ID: 26180
-# Current directory: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/impl_126
+# Start of session at: Thu Apr  9 19:27:38 2020
+# Process ID: 18268
+# Current directory: C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/FLP_proj/FLP_proj.runs/impl_126
 # Command line: vivado.exe -log fir8_test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fir8_test.tcl -notrace
-# Log file: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/impl_126/fir8_test.vdi
-# Journal file: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/impl_126\vivado.jou
+# Log file: C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/FLP_proj/FLP_proj.runs/impl_126/fir8_test.vdi
+# Journal file: C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/FLP_proj/FLP_proj.runs/impl_126\vivado.jou
 #-----------------------------------------------------------
 source fir8_test.tcl -notrace

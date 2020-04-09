@@ -60,6 +60,10 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Physopt 32-662} -limit 9999
+set_msg_config -id {Physopt 32-668} -limit 9999
+set_msg_config -id {Physopt 32-702} -limit 9999
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -70,12 +74,12 @@ set rc [catch {
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.cache/wt [current_project]
-  set_property parent.project_path D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.xpr [current_project]
-  set_property ip_output_repo D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/FLP_proj/FLP_proj.cache/wt [current_project]
+  set_property parent.project_path C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/FLP_proj/FLP_proj.xpr [current_project]
+  set_property ip_output_repo C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/FLP_proj/FLP_proj.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/synth_default_full_deafault/fir8_test.dcp
-  read_xdc D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test_timing.xdc
+  add_files -quiet C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/FLP_proj/FLP_proj.runs/synth_default_full_deafault/fir8_test.dcp
+  read_xdc C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc
   link_design -top fir8_test -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

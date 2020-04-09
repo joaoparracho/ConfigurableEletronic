@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_60" LaunchPart="xc7a35tcpg236-1" LaunchTime="1586375489">
+<GenRun Id="impl_60" LaunchPart="xc7a35tcpg236-1" LaunchTime="1586457771">
   <File Type="ROUTE-PWR" Name="fir8_test_power_routed.rpt"/>
   <File Type="PA-TCL" Name="fir8_test.tcl"/>
   <File Type="BITSTR-BMM" Name="fir8_test_bd.bmm"/>
@@ -115,6 +115,7 @@
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../P1_Sources/fir8_test_timing.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -137,6 +138,5 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>
