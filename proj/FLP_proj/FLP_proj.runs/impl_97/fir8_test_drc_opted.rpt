@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Thu Apr  9 19:30:12 2020
+| Date         : Thu Apr  9 23:44:48 2020
 | Host         : Anastacio running 64-bit major release  (build 9200)
 | Command      : report_drc -file fir8_test_drc_opted.rpt -pb fir8_test_drc_opted.pb -rpx fir8_test_drc_opted.rpx
 | Design       : fir8_test

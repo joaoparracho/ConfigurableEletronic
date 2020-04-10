@@ -125,73 +125,73 @@ end process p_output;
 end rtl_piped; 
 
 
--- Non-pipelined architecture -------------------------------------------------------------------
+---- Non-pipelined architecture -------------------------------------------------------------------
 
-architecture rtl of fir_filter_8 is 
+--architecture rtl of fir_filter_8 is 
  
-type t_data_pipe      is array (0 to 7) of signed(13  downto 0); 
-type t_coeff          is array (0 to 7) of signed(7  downto 0); 
-type t_mult           is array (0 to 7) of signed(21    downto 0); 
-type t_add_st0        is array (0 to 3) of signed(21+1  downto 0); 
-type t_add_st1        is array (0 to 1) of signed(21+2  downto 0); 
-signal r_coeff              : t_coeff ; 
-signal p_data               : t_data_pipe; 
-signal r_mult               : t_mult; 
-signal r_add_st0            : t_add_st0; 
-signal r_add_st1            : t_add_st1; 
-signal r_add_st2            : signed(21+3  downto 0); 
+--type t_data_pipe      is array (0 to 7) of signed(13  downto 0); 
+--type t_coeff          is array (0 to 7) of signed(7  downto 0); 
+--type t_mult           is array (0 to 7) of signed(21    downto 0); 
+--type t_add_st0        is array (0 to 3) of signed(21+1  downto 0); 
+--type t_add_st1        is array (0 to 1) of signed(21+2  downto 0); 
+--signal r_coeff              : t_coeff ; 
+--signal p_data               : t_data_pipe; 
+--signal r_mult               : t_mult; 
+--signal r_add_st0            : t_add_st0; 
+--signal r_add_st1            : t_add_st1; 
+--signal r_add_st2            : signed(21+3  downto 0); 
  
-begin 
+--begin 
  
-p_input : process (i_rstb,i_clk) 
-begin 
-  if(i_rstb='0') then 
-    p_data       <= (others=>(others=>'0')); 
-    r_coeff      <= (others=>(others=>'0')); 
-  elsif(rising_edge(i_clk)) then 
-    p_data      <= signed(i_data)&p_data(0 to p_data'length-2); 
-    r_coeff(0)  <= signed(i_coeff_0); 
-    r_coeff(1)  <= signed(i_coeff_1); 
-    r_coeff(2)  <= signed(i_coeff_2); 
-    r_coeff(3)  <= signed(i_coeff_3); 
-    r_coeff(4)  <= signed(i_coeff_4); 
-    r_coeff(5)  <= signed(i_coeff_5); 
-    r_coeff(6)  <= signed(i_coeff_6); 
-    r_coeff(7)  <= signed(i_coeff_7); 
-  end if; 
-end process p_input; 
+--p_input : process (i_rstb,i_clk) 
+--begin 
+--  if(i_rstb='0') then 
+--    p_data       <= (others=>(others=>'0')); 
+--    r_coeff      <= (others=>(others=>'0')); 
+--  elsif(rising_edge(i_clk)) then 
+--    p_data      <= signed(i_data)&p_data(0 to p_data'length-2); 
+--    r_coeff(0)  <= signed(i_coeff_0); 
+--    r_coeff(1)  <= signed(i_coeff_1); 
+--    r_coeff(2)  <= signed(i_coeff_2); 
+--    r_coeff(3)  <= signed(i_coeff_3); 
+--    r_coeff(4)  <= signed(i_coeff_4); 
+--    r_coeff(5)  <= signed(i_coeff_5); 
+--    r_coeff(6)  <= signed(i_coeff_6); 
+--    r_coeff(7)  <= signed(i_coeff_7); 
+--  end if; 
+--end process p_input; 
  
-p_mult : process (i_rstb,i_clk) 
-begin 
-    for k in 0 to 7 loop 
-      r_mult(k)       <= p_data(k) * r_coeff(k); 
-    end loop; 
-end process p_mult; 
+--p_mult : process (i_rstb,i_clk) 
+--begin 
+--    for k in 0 to 7 loop 
+--      r_mult(k)       <= p_data(k) * r_coeff(k); 
+--    end loop; 
+--end process p_mult; 
  
-p_add_st0 : process (i_rstb,i_clk) 
-begin 
-    for k in 0 to 3 loop 
-      r_add_st0(k)     <= resize(r_mult(2*k),23)  + resize(r_mult(2*k+1),23) ; 
-    end loop; 
-end process p_add_st0; 
+--p_add_st0 : process (i_rstb,i_clk) 
+--begin 
+--    for k in 0 to 3 loop 
+--      r_add_st0(k)     <= resize(r_mult(2*k),23)  + resize(r_mult(2*k+1),23) ; 
+--    end loop; 
+--end process p_add_st0; 
  
-p_add_st1 : process (i_rstb,i_clk) 
-begin
-    for k in 0 to 1 loop 
-      r_add_st1(k)     <= resize(r_add_st0(2*k),24)  + resize(r_add_st0(2*k+1),24) ; 
-    end loop; 
-end process p_add_st1; 
+--p_add_st1 : process (i_rstb,i_clk) 
+--begin
+--    for k in 0 to 1 loop 
+--      r_add_st1(k)     <= resize(r_add_st0(2*k),24)  + resize(r_add_st0(2*k+1),24) ; 
+--    end loop; 
+--end process p_add_st1; 
 
-r_add_st2     <= resize(r_add_st1(0),25)  + resize(r_add_st1(1),25); 
+--r_add_st2     <= resize(r_add_st1(0),25)  + resize(r_add_st1(1),25); 
 
  
-p_output : process (i_rstb,i_clk) 
-begin 
-  if(i_rstb='0') then 
-    o_data     <= (others=>'0'); 
-  elsif(rising_edge(i_clk)) then 
-    o_data     <= std_logic_vector(r_add_st2(24 downto 9)); 
-  end if; 
-end process p_output; 
+--p_output : process (i_rstb,i_clk) 
+--begin 
+--  if(i_rstb='0') then 
+--    o_data     <= (others=>'0'); 
+--  elsif(rising_edge(i_clk)) then 
+--    o_data     <= std_logic_vector(r_add_st2(24 downto 9)); 
+--  end if; 
+--end process p_output; 
  
-end rtl; 
+--end rtl; 

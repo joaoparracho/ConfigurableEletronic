@@ -15,9 +15,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7504 
+INFO: Helper process launched with PID 9464 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 798.051 ; gain = 234.297
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 798.184 ; gain = 233.980
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'fir8_test' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test.vhd:45]
 INFO: [Synth 8-638] synthesizing module 'coef_rom' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/coef_rom.vhd:55]
@@ -40,15 +40,11 @@ WARNING: [Synth 8-5825] expecting unsigned expression [C:/Users/ricar/Desktop/EC
 INFO: [Synth 8-256] done synthesizing module 'dds_rom2' (3#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds_rom2.vhd:46]
 INFO: [Synth 8-638] synthesizing module 'dds_sine' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:16]
 INFO: [Synth 8-256] done synthesizing module 'dds_sine' (4#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:16]
-INFO: [Synth 8-638] synthesizing module 'fir_filter_8_rtl' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:130]
-WARNING: [Synth 8-614] signal 'p_data' is read in the process but is not in the sensitivity list [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:164]
-WARNING: [Synth 8-614] signal 'r_coeff' is read in the process but is not in the sensitivity list [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:164]
-WARNING: [Synth 8-614] signal 'r_mult' is read in the process but is not in the sensitivity list [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:171]
-WARNING: [Synth 8-614] signal 'r_add_st0' is read in the process but is not in the sensitivity list [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:178]
-INFO: [Synth 8-256] done synthesizing module 'fir_filter_8_rtl' (5#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'fir_filter_8' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'fir_filter_8' (5#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:38]
 INFO: [Synth 8-256] done synthesizing module 'fir8_test' (6#1) [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test.vhd:45]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1178.176 ; gain = 614.422
+Finished RTL Elaboration : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1168.605 ; gain = 604.402
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -61,12 +57,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1178.176 ; gain = 614.422
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1168.605 ; gain = 604.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1178.176 ; gain = 614.422
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1168.605 ; gain = 604.402
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1178.176 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1168.605 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -76,31 +72,31 @@ INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as o
 Finished Parsing XDC File [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir8_test_timing.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1280.793 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1240.828 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1280.793 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1240.828 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1280.793 ; gain = 717.039
+Finished Constraint Validation : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1240.828 ; gain = 676.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1280.793 ; gain = 717.039
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1240.828 ; gain = 676.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 1280.793 ; gain = 717.039
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1240.828 ; gain = 676.625
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "fcw_ROM" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "phase_ROM" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 1280.793 ; gain = 717.039
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 1240.828 ; gain = 676.625
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -114,8 +110,14 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     25 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 2     
+	   2 Input     23 Bit       Adders := 4     
 +---Registers : 
 	               32 Bit    Registers := 2     
+	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	               23 Bit    Registers := 4     
+	               22 Bit    Registers := 8     
 	               16 Bit    Registers := 1     
 	               14 Bit    Registers := 10    
 	               13 Bit    Registers := 1     
@@ -149,11 +151,17 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---ROMs : 
 	                              ROMs := 1     
-Module fir_filter_8_rtl 
+Module fir_filter_8 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     25 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 2     
+	   2 Input     23 Bit       Adders := 4     
 +---Registers : 
+	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	               23 Bit    Registers := 4     
+	               22 Bit    Registers := 8     
 	               16 Bit    Registers := 1     
 	               14 Bit    Registers := 8     
 	                8 Bit    Registers := 8     
@@ -173,123 +181,115 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[5][7:0]' into 'fir_filter_i4/r_coeff_reg[4][7:0]' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:150]
-INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[0][7:0]' into 'fir_filter_i4/r_coeff_reg[7][7:0]' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:150]
-INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[1][7:0]' into 'fir_filter_i4/r_coeff_reg[6][7:0]' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:150]
-INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[2][7:0]' into 'fir_filter_i4/r_coeff_reg[4][7:0]' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:150]
-INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[3][7:0]' into 'fir_filter_i4/r_coeff_reg[4][7:0]' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:150]
-DSP Report: Generating DSP fir_filter_i4/RESIZE0, operation Mode is: A*B.
-DSP Report: operator fir_filter_i4/RESIZE0 is absorbed into DSP fir_filter_i4/RESIZE0.
-DSP Report: Generating DSP fir_filter_i4/RESIZE0, operation Mode is: PCIN+A*B.
-DSP Report: operator fir_filter_i4/RESIZE0 is absorbed into DSP fir_filter_i4/RESIZE0.
-DSP Report: operator fir_filter_i4/RESIZE0 is absorbed into DSP fir_filter_i4/RESIZE0.
-DSP Report: Generating DSP fir_filter_i4/RESIZE0, operation Mode is: A*B.
-DSP Report: operator fir_filter_i4/RESIZE0 is absorbed into DSP fir_filter_i4/RESIZE0.
-DSP Report: Generating DSP fir_filter_i4/RESIZE0, operation Mode is: PCIN+A*B.
-DSP Report: operator fir_filter_i4/RESIZE0 is absorbed into DSP fir_filter_i4/RESIZE0.
-DSP Report: operator fir_filter_i4/RESIZE0 is absorbed into DSP fir_filter_i4/RESIZE0.
-DSP Report: Generating DSP fir_filter_i4/RESIZE0, operation Mode is: PCIN+A:B.
-DSP Report: operator fir_filter_i4/RESIZE0 is absorbed into DSP fir_filter_i4/RESIZE0.
-DSP Report: Generating DSP fir_filter_i4/RESIZE0, operation Mode is: A*B.
-DSP Report: operator fir_filter_i4/RESIZE0 is absorbed into DSP fir_filter_i4/RESIZE0.
-DSP Report: Generating DSP fir_filter_i4/RESIZE0, operation Mode is: PCIN+A*B.
-DSP Report: operator fir_filter_i4/RESIZE0 is absorbed into DSP fir_filter_i4/RESIZE0.
-DSP Report: operator fir_filter_i4/RESIZE0 is absorbed into DSP fir_filter_i4/RESIZE0.
-DSP Report: Generating DSP fir_filter_i4/RESIZE0, operation Mode is: A*B.
-DSP Report: operator fir_filter_i4/RESIZE0 is absorbed into DSP fir_filter_i4/RESIZE0.
-DSP Report: Generating DSP fir_filter_i4/RESIZE0, operation Mode is: PCIN+A*B.
-DSP Report: operator fir_filter_i4/RESIZE0 is absorbed into DSP fir_filter_i4/RESIZE0.
-DSP Report: operator fir_filter_i4/RESIZE0 is absorbed into DSP fir_filter_i4/RESIZE0.
-DSP Report: Generating DSP fir_filter_i4/RESIZE0, operation Mode is: PCIN+A:B.
-DSP Report: operator fir_filter_i4/RESIZE0 is absorbed into DSP fir_filter_i4/RESIZE0.
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[0]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[4][7:0]' into 'fir_filter_i4/r_coeff_reg[5][7:0]' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:60]
+INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[3][7:0]' into 'fir_filter_i4/r_coeff_reg[5][7:0]' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:60]
+INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[2][7:0]' into 'fir_filter_i4/r_coeff_reg[5][7:0]' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:60]
+INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[1][7:0]' into 'fir_filter_i4/r_coeff_reg[6][7:0]' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:60]
+INFO: [Synth 8-4471] merging register 'fir_filter_i4/r_coeff_reg[0][7:0]' into 'fir_filter_i4/r_coeff_reg[7][7:0]' [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:60]
+DSP Report: Generating DSP fir_filter_i4/r_mult_reg[7]0, operation Mode is: A*B.
+DSP Report: operator fir_filter_i4/r_mult_reg[7]0 is absorbed into DSP fir_filter_i4/r_mult_reg[7]0.
+DSP Report: Generating DSP fir_filter_i4/r_mult_reg[6]0, operation Mode is: A*B.
+DSP Report: operator fir_filter_i4/r_mult_reg[6]0 is absorbed into DSP fir_filter_i4/r_mult_reg[6]0.
+DSP Report: Generating DSP fir_filter_i4/r_mult_reg[5]0, operation Mode is: A*B.
+DSP Report: operator fir_filter_i4/r_mult_reg[5]0 is absorbed into DSP fir_filter_i4/r_mult_reg[5]0.
+DSP Report: Generating DSP fir_filter_i4/r_mult_reg[4]0, operation Mode is: A*B.
+DSP Report: operator fir_filter_i4/r_mult_reg[4]0 is absorbed into DSP fir_filter_i4/r_mult_reg[4]0.
+DSP Report: Generating DSP fir_filter_i4/r_mult_reg[3]0, operation Mode is: A*B.
+DSP Report: operator fir_filter_i4/r_mult_reg[3]0 is absorbed into DSP fir_filter_i4/r_mult_reg[3]0.
+DSP Report: Generating DSP fir_filter_i4/r_mult_reg[2]0, operation Mode is: A*B.
+DSP Report: operator fir_filter_i4/r_mult_reg[2]0 is absorbed into DSP fir_filter_i4/r_mult_reg[2]0.
+DSP Report: Generating DSP fir_filter_i4/r_mult_reg[1]0, operation Mode is: A*B.
+DSP Report: operator fir_filter_i4/r_mult_reg[1]0 is absorbed into DSP fir_filter_i4/r_mult_reg[1]0.
+DSP Report: Generating DSP fir_filter_i4/r_mult_reg[0]0, operation Mode is: A*B.
+DSP Report: operator fir_filter_i4/r_mult_reg[0]0 is absorbed into DSP fir_filter_i4/r_mult_reg[0]0.
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[5][0]' (FDC) to 'fir_filter_i4/r_coeff_reg[5][3]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[5][1]' (FDC) to 'fir_filter_i4/r_coeff_reg[5][7]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[5][2]' (FDC) to 'fir_filter_i4/r_coeff_reg[5][3]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[5][3]' (FDC) to 'fir_filter_i4/r_coeff_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[5][4]' (FDC) to 'fir_filter_i4/r_coeff_reg[5][7]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[5][5]' (FDC) to 'fir_filter_i4/r_coeff_reg[5][7]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[5][6]' (FDC) to 'fir_filter_i4/r_coeff_reg[5][7]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[5][7]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[6][0]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[6][1]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[6][2]' (FDC) to 'fir_filter_i4/r_coeff_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[6][3]' (FDC) to 'fir_filter_i4/r_coeff_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[6][4]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[6][5]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[6][6]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[6][7]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[7][0]' (FDC) to 'fir_filter_i4/r_coeff_reg[7][1]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[7][1]' (FDC) to 'fir_filter_i4/r_coeff_reg[7][3]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[7][2]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[7][4]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[7][5]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[7][6]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[7][7]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[0]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[0]' (FDC) to 'dds_sine_i3/r_start_phase_reg[1]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[1]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[1]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[1]' (FDC) to 'dds_sine_i3/r_start_phase_reg[2]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[2]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[2]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[2]' (FDC) to 'dds_sine_i3/r_start_phase_reg[3]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[3]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[3]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[3]' (FDC) to 'dds_sine_i3/r_start_phase_reg[4]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[4]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[4]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[4]' (FDC) to 'dds_sine_i3/r_start_phase_reg[5]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[5]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[5]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[5]' (FDC) to 'dds_sine_i3/r_start_phase_reg[6]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[6]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[6]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[6]' (FDC) to 'dds_sine_i3/r_start_phase_reg[7]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[7]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[7]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[7]' (FDC) to 'dds_sine_i3/r_start_phase_reg[8]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[8]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[8]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[8]' (FDC) to 'dds_sine_i3/r_start_phase_reg[9]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[9]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[9]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[9]' (FDC) to 'dds_sine_i3/r_start_phase_reg[10]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[10]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[10]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[10]' (FDC) to 'dds_sine_i3/r_start_phase_reg[11]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[11]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[11]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[11]' (FDC) to 'dds_sine_i3/r_start_phase_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[12]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[12]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[12]' (FDC) to 'dds_sine_i3/r_start_phase_reg[13]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[13]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[13]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[13]' (FDC) to 'dds_sine_i3/r_start_phase_reg[14]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[14]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[14]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[14]' (FDC) to 'dds_sine_i3/r_start_phase_reg[15]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[15]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[15]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[15]' (FDC) to 'dds_sine_i3/r_start_phase_reg[16]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[16]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[16]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[16]' (FDC) to 'dds_sine_i3/r_start_phase_reg[17]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[17]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[17]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[17]' (FDC) to 'dds_sine_i3/r_start_phase_reg[18]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[18]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[18]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[18]' (FDC) to 'dds_sine_i3/r_start_phase_reg[19]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[19]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[19]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[19]' (FDC) to 'dds_sine_i3/r_start_phase_reg[20]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[20]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[20]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[20]' (FDC) to 'dds_sine_i3/r_start_phase_reg[21]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[21]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[21]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[21]' (FDC) to 'dds_sine_i3/r_start_phase_reg[22]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[22]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[22]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[22]' (FDC) to 'dds_sine_i3/r_start_phase_reg[23]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[23]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[23]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[23]' (FDC) to 'dds_sine_i3/r_start_phase_reg[24]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[24]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[24]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[24]' (FDC) to 'dds_sine_i3/r_start_phase_reg[25]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[25]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[25]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[25]' (FDC) to 'dds_sine_i3/r_start_phase_reg[26]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[26]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[26]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[26]' (FDC) to 'dds_sine_i3/r_start_phase_reg[27]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[27]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[27]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[27]' (FDC) to 'dds_sine_i3/r_start_phase_reg[28]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[28]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[28]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[28]' (FDC) to 'dds_sine_i3/r_start_phase_reg[29]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[29]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[29]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[29]' (FDC) to 'dds_sine_i3/r_start_phase_reg[30]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[30]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[30]' (FDC) to 'dds_sine_i3/r_fcw_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_start_phase_reg[30]' (FDC) to 'dds_sine_i3/r_start_phase_reg[31]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_fcw_reg[31]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[6][0]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[6][1]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[6][2]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][3]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[6][3]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][3]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[6][4]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[6][5]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[6][6]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[6][7]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[7][0]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][3]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[7][1]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][3]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[7][2]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[7][3]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][3]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[7][4]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[7][5]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[7][6]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[7][7]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[4][0]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][3]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[4][1]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[4][2]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][3]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[4][4]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[4][5]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[4][6]' (FDC) to 'fir_filter_i4/r_coeff_reg[4][7]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fir_filter_i4/r_coeff_reg[4][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dds_sine_i3/r_fcw_reg[31] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:13 . Memory (MB): peak = 1280.793 ; gain = 717.039
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:01:55 . Memory (MB): peak = 1240.828 ; gain = 676.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -304,40 +304,38 @@ ROM:
 
 
 DSP: Preliminary Mapping	Report (see note below)
-+-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name      | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|fir_filter_8_rtl | A*B         | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|fir_filter_8_rtl | PCIN+A*B    | 14     | 8      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|fir_filter_8_rtl | A*B         | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|fir_filter_8_rtl | PCIN+A*B    | 14     | 8      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|fir8_test        | PCIN+A:B    | 5      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|fir_filter_8_rtl | A*B         | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|fir_filter_8_rtl | PCIN+A*B    | 14     | 8      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|fir_filter_8_rtl | A*B         | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|fir_filter_8_rtl | PCIN+A*B    | 14     | 8      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|fir8_test        | PCIN+A:B    | 5      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-+-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fir_filter_8 | A*B         | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_filter_8 | A*B         | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_filter_8 | A*B         | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_filter_8 | A*B         | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_filter_8 | A*B         | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_filter_8 | A*B         | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_filter_8 | A*B         | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_filter_8 | A*B         | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:59]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:59]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:59]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:59]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:59]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:59]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:59]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:59]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
 
 Report RTL Partitions: 
@@ -349,13 +347,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:01:27 . Memory (MB): peak = 1280.793 ; gain = 717.039
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:10 ; elapsed = 00:02:14 . Memory (MB): peak = 1240.828 ; gain = 676.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:27 ; elapsed = 00:01:28 . Memory (MB): peak = 1280.793 ; gain = 717.039
+Finished Timing Optimization : Time (s): cpu = 00:02:11 ; elapsed = 00:02:14 . Memory (MB): peak = 1240.828 ; gain = 676.625
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -366,6 +364,22 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:77]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:77]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:77]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:77]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:77]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:77]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:77]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:77]
+INFO: [Synth 8-3886] merging instance 'fir_filter_i4/r_coeff_reg[7][3]' (FDC) to 'i_371'
+INFO: [Synth 8-3886] merging instance 'i_210' (FDC) to 'i_371'
+INFO: [Synth 8-3886] merging instance 'i_233' (FDC) to 'i_371'
+INFO: [Synth 8-3886] merging instance 'i_256' (FDC) to 'i_371'
+INFO: [Synth 8-3886] merging instance 'i_279' (FDC) to 'i_371'
+INFO: [Synth 8-3886] merging instance 'i_302' (FDC) to 'i_371'
+INFO: [Synth 8-3886] merging instance 'i_325' (FDC) to 'i_371'
+INFO: [Synth 8-3886] merging instance 'i_348' (FDC) to 'i_371'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_nco_reg[19]' (FDCE) to 'dds_sine_i3/r_nco_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_nco_reg[20]' (FDCE) to 'dds_sine_i3/r_nco_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_nco_reg[21]' (FDCE) to 'dds_sine_i3/r_nco_reg[31]'
@@ -373,29 +387,25 @@ INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_nco_reg[22]' (FDCE) to 'dds
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_nco_reg[23]' (FDCE) to 'dds_sine_i3/r_nco_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_nco_reg[24]' (FDCE) to 'dds_sine_i3/r_nco_reg[31]'
 INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_nco_reg[25]' (FDCE) to 'dds_sine_i3/r_nco_reg[31]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_nco_reg[26]' (FDCE) to 'dds_sine_i3/r_nco_reg[31]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_nco_reg[27]' (FDCE) to 'dds_sine_i3/r_nco_reg[31]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_nco_reg[28]' (FDCE) to 'dds_sine_i3/r_nco_reg[31]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_nco_reg[29]' (FDCE) to 'dds_sine_i3/r_nco_reg[31]'
-INFO: [Synth 8-3886] merging instance 'dds_sine_i3/r_nco_reg[30]' (FDCE) to 'dds_sine_i3/r_nco_reg[31]'
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:59]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:59]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:59]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:59]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:59]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:59]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:59]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/fir_filter_8.vhd:59]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/P1_Sources/dds.vhd:6]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:27 ; elapsed = 00:01:28 . Memory (MB): peak = 1280.793 ; gain = 717.039
+Finished Technology Mapping : Time (s): cpu = 00:02:11 ; elapsed = 00:02:15 . Memory (MB): peak = 1240.828 ; gain = 676.625
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -420,13 +430,13 @@ INFO: [Synth 8-6064] Net sel[12] is driving 52 big block pins (URAM, BRAM and DS
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:01:34 . Memory (MB): peak = 1280.793 ; gain = 717.039
+Finished IO Insertion : Time (s): cpu = 00:02:17 ; elapsed = 00:02:21 . Memory (MB): peak = 1249.180 ; gain = 684.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:34 . Memory (MB): peak = 1280.793 ; gain = 717.039
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:17 ; elapsed = 00:02:21 . Memory (MB): peak = 1249.180 ; gain = 684.977
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -445,25 +455,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:34 ; elapsed = 00:01:34 . Memory (MB): peak = 1280.793 ; gain = 717.039
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:18 ; elapsed = 00:02:21 . Memory (MB): peak = 1249.180 ; gain = 684.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:34 ; elapsed = 00:01:34 . Memory (MB): peak = 1280.793 ; gain = 717.039
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:18 ; elapsed = 00:02:21 . Memory (MB): peak = 1249.180 ; gain = 684.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:34 ; elapsed = 00:01:34 . Memory (MB): peak = 1280.793 ; gain = 717.039
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:18 ; elapsed = 00:02:21 . Memory (MB): peak = 1249.180 ; gain = 684.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:34 ; elapsed = 00:01:34 . Memory (MB): peak = 1280.793 ; gain = 717.039
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:18 ; elapsed = 00:02:21 . Memory (MB): peak = 1249.180 ; gain = 684.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -480,52 +490,52 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BUFG       |     1|
-|2     |CARRY4     |     7|
-|3     |DSP48E1    |     8|
-|4     |DSP48E1_1  |     2|
-|5     |LUT1       |     2|
-|6     |LUT2       |    25|
+|2     |CARRY4     |    43|
+|3     |DSP48E1_1  |     8|
+|4     |LUT1       |     4|
+|5     |LUT2       |   159|
+|6     |LUT3       |    88|
 |7     |RAMB18E1_1 |     1|
 |8     |RAMB36E1_3 |     1|
 |9     |RAMB36E1_4 |     1|
 |10    |RAMB36E1_5 |     1|
-|11    |FDCE       |   150|
+|11    |FDCE       |   307|
 |12    |FDPE       |     1|
 |13    |IBUF       |     5|
 |14    |OBUF       |    30|
 +------+-----------+------+
 
 Report Instance Areas: 
-+------+----------------+-----------------+------+
-|      |Instance        |Module           |Cells |
-+------+----------------+-----------------+------+
-|1     |top             |                 |   235|
-|2     |  dds_sine_i3   |dds_sine         |    27|
-|3     |  fir_filter_i4 |fir_filter_8_rtl |   172|
-+------+----------------+-----------------+------+
++------+----------------+-------------+------+
+|      |Instance        |Module       |Cells |
++------+----------------+-------------+------+
+|1     |top             |             |   650|
+|2     |  dds_sine_i3   |dds_sine     |    27|
+|3     |  fir_filter_i4 |fir_filter_8 |   585|
++------+----------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:34 ; elapsed = 00:01:34 . Memory (MB): peak = 1280.793 ; gain = 717.039
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:18 ; elapsed = 00:02:21 . Memory (MB): peak = 1249.180 ; gain = 684.977
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:03 ; elapsed = 00:01:32 . Memory (MB): peak = 1280.793 ; gain = 614.422
-Synthesis Optimization Complete : Time (s): cpu = 00:01:34 ; elapsed = 00:01:35 . Memory (MB): peak = 1280.793 ; gain = 717.039
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:25 ; elapsed = 00:02:17 . Memory (MB): peak = 1249.180 ; gain = 612.754
+Synthesis Optimization Complete : Time (s): cpu = 00:02:18 ; elapsed = 00:02:22 . Memory (MB): peak = 1249.180 ; gain = 684.977
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1280.793 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1251.207 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1280.793 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1251.207 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-162 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+174 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:39 ; elapsed = 00:01:40 . Memory (MB): peak = 1280.793 ; gain = 980.422
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1280.793 ; gain = 0.000
+synth_design: Time (s): cpu = 00:02:26 ; elapsed = 00:02:31 . Memory (MB): peak = 1251.207 ; gain = 950.301
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1251.207 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/FLP_proj/FLP_proj.runs/synth_rebuilt/fir8_test.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file fir8_test_utilization_synth.rpt -pb fir8_test_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr  9 19:22:26 2020...
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  9 23:50:27 2020...

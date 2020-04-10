@@ -18,10 +18,6 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 3
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Physopt 32-662} -limit 9999
-set_msg_config -id {Physopt 32-668} -limit 9999
-set_msg_config -id {Physopt 32-702} -limit 9999
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0

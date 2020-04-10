@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Thu Apr  9 19:22:19 2020
+| Date         : Thu Apr  9 23:44:08 2020
 | Host         : Anastacio running 64-bit major release  (build 9200)
 | Command      : report_utilization -file fir8_test_utilization_synth.rpt -pb fir8_test_utilization_synth.pb
 | Design       : fir8_test
@@ -33,8 +33,8 @@ Table of Contents
 | Slice LUTs*             |  572 |     0 |     20800 |  2.75 |
 |   LUT as Logic          |  572 |     0 |     20800 |  2.75 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  154 |     0 |     41600 |  0.37 |
-|   Register as Flip Flop |  154 |     0 |     41600 |  0.37 |
+| Slice Registers         |  486 |     0 |     41600 |  1.17 |
+|   Register as Flip Flop |  486 |     0 |     41600 |  1.17 |
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
 | F7 Muxes                |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
@@ -55,7 +55,7 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 1     |          Yes |           - |          Set |
-| 153   |          Yes |           - |        Reset |
+| 485   |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 0     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -152,8 +152,8 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | LUT2     |  539 |                 LUT |
+| FDCE     |  485 |        Flop & Latch |
 | CARRY4   |  163 |          CarryLogic |
-| FDCE     |  153 |        Flop & Latch |
 | LUT3     |   88 |                 LUT |
 | LUT1     |   48 |                 LUT |
 | OBUF     |   30 |                  IO |

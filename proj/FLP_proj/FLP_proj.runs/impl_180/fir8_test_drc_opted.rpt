@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Thu Apr  9 19:26:23 2020
+| Date         : Thu Apr  9 23:45:02 2020
 | Host         : Anastacio running 64-bit major release  (build 9200)
 | Command      : report_drc -file fir8_test_drc_opted.rpt -pb fir8_test_drc_opted.pb -rpx fir8_test_drc_opted.rpx
 | Design       : fir8_test
@@ -24,7 +24,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 63
+             Violations found: 61
 +-----------+------------------+-----------------------------------------------------+------------+
 | Rule      | Severity         | Description                                         | Violations |
 +-----------+------------------+-----------------------------------------------------+------------+
@@ -32,9 +32,8 @@ Table of Contents
 | UCIO-1    | Critical Warning | Unconstrained Logical Port                          | 1          |
 | CFGBVS-1  | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
 | CHECK-3   | Warning          | Report rule limit reached                           | 1          |
-| DPIP-1    | Warning          | Input pipelining                                    | 20         |
-| DPOP-1    | Warning          | PREG Output pipelining                              | 4          |
-| DPOP-2    | Warning          | MREG Output pipelining                              | 2          |
+| DPIP-1    | Warning          | Input pipelining                                    | 16         |
+| DPOP-2    | Warning          | MREG Output pipelining                              | 8          |
 | REQP-1839 | Warning          | RAMB36 async control check                          | 20         |
 | REQP-1840 | Warning          | RAMB18 async control check                          | 13         |
 +-----------+------------------+-----------------------------------------------------+------------+
@@ -71,132 +70,122 @@ Related violations: <none>
 
 DPIP-1#1 Warning
 Input pipelining  
-DSP fir_filter_i4/RESIZE0 input fir_filter_i4/RESIZE0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP fir_filter_i4/r_mult_reg[0]0 input fir_filter_i4/r_mult_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#2 Warning
 Input pipelining  
-DSP fir_filter_i4/RESIZE0 input fir_filter_i4/RESIZE0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP fir_filter_i4/r_mult_reg[0]0 input fir_filter_i4/r_mult_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#3 Warning
 Input pipelining  
-DSP fir_filter_i4/RESIZE0__0 input fir_filter_i4/RESIZE0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP fir_filter_i4/r_mult_reg[1]0 input fir_filter_i4/r_mult_reg[1]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#4 Warning
 Input pipelining  
-DSP fir_filter_i4/RESIZE0__0 input fir_filter_i4/RESIZE0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP fir_filter_i4/r_mult_reg[1]0 input fir_filter_i4/r_mult_reg[1]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#5 Warning
 Input pipelining  
-DSP fir_filter_i4/RESIZE0__1 input fir_filter_i4/RESIZE0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP fir_filter_i4/r_mult_reg[2]0 input fir_filter_i4/r_mult_reg[2]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#6 Warning
 Input pipelining  
-DSP fir_filter_i4/RESIZE0__1 input fir_filter_i4/RESIZE0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP fir_filter_i4/r_mult_reg[2]0 input fir_filter_i4/r_mult_reg[2]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#7 Warning
 Input pipelining  
-DSP fir_filter_i4/RESIZE0__2 input fir_filter_i4/RESIZE0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP fir_filter_i4/r_mult_reg[3]0 input fir_filter_i4/r_mult_reg[3]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#8 Warning
 Input pipelining  
-DSP fir_filter_i4/RESIZE0__2 input fir_filter_i4/RESIZE0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP fir_filter_i4/r_mult_reg[3]0 input fir_filter_i4/r_mult_reg[3]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#9 Warning
 Input pipelining  
-DSP fir_filter_i4/RESIZE0__3 input fir_filter_i4/RESIZE0__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP fir_filter_i4/r_mult_reg[4]0 input fir_filter_i4/r_mult_reg[4]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#10 Warning
 Input pipelining  
-DSP fir_filter_i4/RESIZE0__3 input fir_filter_i4/RESIZE0__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP fir_filter_i4/r_mult_reg[4]0 input fir_filter_i4/r_mult_reg[4]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#11 Warning
 Input pipelining  
-DSP fir_filter_i4/RESIZE0__4 input fir_filter_i4/RESIZE0__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP fir_filter_i4/r_mult_reg[5]0 input fir_filter_i4/r_mult_reg[5]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#12 Warning
 Input pipelining  
-DSP fir_filter_i4/RESIZE0__4 input fir_filter_i4/RESIZE0__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP fir_filter_i4/r_mult_reg[5]0 input fir_filter_i4/r_mult_reg[5]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#13 Warning
 Input pipelining  
-DSP fir_filter_i4/RESIZE0__5 input fir_filter_i4/RESIZE0__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP fir_filter_i4/r_mult_reg[6]0 input fir_filter_i4/r_mult_reg[6]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#14 Warning
 Input pipelining  
-DSP fir_filter_i4/RESIZE0__5 input fir_filter_i4/RESIZE0__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP fir_filter_i4/r_mult_reg[6]0 input fir_filter_i4/r_mult_reg[6]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#15 Warning
 Input pipelining  
-DSP fir_filter_i4/RESIZE0__6 input fir_filter_i4/RESIZE0__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP fir_filter_i4/r_mult_reg[7]0 input fir_filter_i4/r_mult_reg[7]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#16 Warning
 Input pipelining  
-DSP fir_filter_i4/RESIZE0__6 input fir_filter_i4/RESIZE0__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#17 Warning
-Input pipelining  
-DSP fir_filter_i4/RESIZE0__7 input fir_filter_i4/RESIZE0__7/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#18 Warning
-Input pipelining  
-DSP fir_filter_i4/RESIZE0__7 input fir_filter_i4/RESIZE0__7/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#19 Warning
-Input pipelining  
-DSP fir_filter_i4/RESIZE0__8 input fir_filter_i4/RESIZE0__8/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#20 Warning
-Input pipelining  
-DSP fir_filter_i4/RESIZE0__8 input fir_filter_i4/RESIZE0__8/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPOP-1#1 Warning
-PREG Output pipelining  
-DSP fir_filter_i4/RESIZE0__2 output fir_filter_i4/RESIZE0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-DPOP-1#2 Warning
-PREG Output pipelining  
-DSP fir_filter_i4/RESIZE0__3 output fir_filter_i4/RESIZE0__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-DPOP-1#3 Warning
-PREG Output pipelining  
-DSP fir_filter_i4/RESIZE0__7 output fir_filter_i4/RESIZE0__7/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-DPOP-1#4 Warning
-PREG Output pipelining  
-DSP fir_filter_i4/RESIZE0__8 output fir_filter_i4/RESIZE0__8/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP fir_filter_i4/r_mult_reg[7]0 input fir_filter_i4/r_mult_reg[7]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPOP-2#1 Warning
 MREG Output pipelining  
-DSP fir_filter_i4/RESIZE0__2 multiplier stage fir_filter_i4/RESIZE0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP fir_filter_i4/r_mult_reg[0]0 multiplier stage fir_filter_i4/r_mult_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#2 Warning
 MREG Output pipelining  
-DSP fir_filter_i4/RESIZE0__7 multiplier stage fir_filter_i4/RESIZE0__7/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP fir_filter_i4/r_mult_reg[1]0 multiplier stage fir_filter_i4/r_mult_reg[1]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP fir_filter_i4/r_mult_reg[2]0 multiplier stage fir_filter_i4/r_mult_reg[2]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP fir_filter_i4/r_mult_reg[3]0 multiplier stage fir_filter_i4/r_mult_reg[3]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP fir_filter_i4/r_mult_reg[4]0 multiplier stage fir_filter_i4/r_mult_reg[4]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP fir_filter_i4/r_mult_reg[5]0 multiplier stage fir_filter_i4/r_mult_reg[5]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP fir_filter_i4/r_mult_reg[6]0 multiplier stage fir_filter_i4/r_mult_reg[6]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP fir_filter_i4/r_mult_reg[7]0 multiplier stage fir_filter_i4/r_mult_reg[7]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 REQP-1839#1 Warning

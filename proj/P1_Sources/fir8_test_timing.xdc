@@ -2,7 +2,7 @@
 # ---------------------------------------------------------------------------------------------------------
 # SYSTEM CLOCK
 # define system clock and period
-create_clock -period 13.000 -name clk -waveform {0.000 6.500} [get_ports clk]
+create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports clk]
 
 # VIRTUAL CLOCK
 # A virtual clock is a clock that is not physically attached to any netlist element in the design.
@@ -10,7 +10,7 @@ create_clock -period 13.000 -name clk -waveform {0.000 6.500} [get_ports clk]
 # - The external device I/O reference clock is not one of the design clocks.
 # - The FPGA I/O paths are related to an internal clock that cannot be properly timed against the board clock
 # - You want to specify different jitter and latency only for the clock related to the I/O delay constraints
-create_clock -period 13.000 -name virtual_clock -waveform {0.000 6.500}
+create_clock -period 10.000 -name virtual_clock -waveform {0.000 5.000}
 
 # ---------------------------------------------------------------------------------------------------------
 # INPUT DELAY
@@ -34,6 +34,9 @@ set_input_delay -clock virtual_clock 0.000 [get_ports {addr_phase[*]}]
 # As neither -min nor -max is used, the output delay value applies to both min and max.
 set_output_delay -clock virtual_clock 0.000 [get_ports {sine_in[*]}]
 set_output_delay -clock virtual_clock 0.000 [get_ports {sine_out[*]}]
+
+
+
 
 
 
