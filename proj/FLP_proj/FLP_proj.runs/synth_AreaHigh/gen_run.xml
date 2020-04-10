@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_AreaHigh" LaunchPart="xc7a35tcpg236-1" LaunchTime="1586472122">
+<GenRun Id="synth_AreaHigh" LaunchPart="xc7a35tcpg236-1" LaunchTime="1586513245">
   <File Type="PA-TCL" Name="fir8_test.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="fir8_test_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="fir8_test_reports.tcl"/>

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Thu Apr  9 23:45:49 2020
+| Date             : Fri Apr 10 11:13:25 2020
 | Host             : Anastacio running 64-bit major release  (build 9200)
 | Command          : report_power -file fir8_test_power_routed.rpt -pb fir8_test_power_summary_routed.pb -rpx fir8_test_power_routed.rpx
 | Design           : fir8_test
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.120        |
+| Total On-Chip Power (W)  | 0.123        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.050        |
+| Dynamic (W)              | 0.053        |
 | Device Static (W)        | 0.070        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.4         |
@@ -52,7 +52,7 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.002 |        4 |       --- |             --- |
+| Clocks         |     0.003 |        4 |       --- |             --- |
 | Slice Logic    |     0.003 |      620 |       --- |             --- |
 |   LUT as Logic |     0.002 |      160 |     20800 |            0.77 |
 |   CARRY4       |    <0.001 |       43 |      8150 |            0.53 |
@@ -61,9 +61,9 @@ Table of Contents
 | Signals        |     0.004 |      553 |       --- |             --- |
 | Block RAM      |     0.007 |      3.5 |        50 |            7.00 |
 | DSPs           |     0.009 |        8 |        90 |            8.89 |
-| I/O            |     0.026 |       35 |       106 |           33.02 |
+| I/O            |     0.027 |       35 |       106 |           33.02 |
 | Static Power   |     0.070 |          |           |                 |
-| Total          |     0.120 |          |           |                 |
+| Total          |     0.123 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,11 +73,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.033 |       0.024 |      0.010 |
+| Vccint    |       1.000 |     0.035 |       0.025 |      0.010 |
 | Vccaux    |       1.800 |     0.015 |       0.002 |      0.013 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.013 |       0.012 |      0.001 |
+| Vcco18    |       1.800 |     0.014 |       0.013 |      0.001 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
@@ -129,7 +129,7 @@ Table of Contents
 +-------+--------+-----------------+
 | Clock | Domain | Constraint (ns) |
 +-------+--------+-----------------+
-| clk   | clk    |            10.0 |
+| clk   | clk    |             9.5 |
 +-------+--------+-----------------+
 
 
@@ -142,7 +142,7 @@ Table of Contents
 +-----------+-----------+
 | Name      | Power (W) |
 +-----------+-----------+
-| fir8_test |     0.050 |
+| fir8_test |     0.053 |
 +-----------+-----------+
 
 
