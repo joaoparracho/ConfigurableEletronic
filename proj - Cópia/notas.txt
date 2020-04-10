@@ -1,0 +1,3 @@
+G2 - Ricardo Anastácio e João Parracho 
+Filtro: Filtro: Lowpass Least-squares 
+wpass=0.02fs, wstop=0.05fs, Wpass=1, Wstop=0.3 

@@ -1,0 +1,138 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 15676
+License: Customer
+
+Current time: 	Mon Apr 06 20:09:13 BST 2020
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 50 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Vivado/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	D:/Vivado/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	JPARR
+User home directory: C:/Users/JPARR
+User working directory: D:/Vivado/ConfigurableEletronic/proj/FLP_proj
+User country: 	PT
+User language: 	pt
+User locale: 	pt_PT
+
+RDI_BASEROOT: D:/Vivado/Vivado
+HDI_APPROOT: D:/Vivado/Vivado/2019.2
+RDI_DATADIR: D:/Vivado/Vivado/2019.2/data
+RDI_BINDIR: D:/Vivado/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/JPARR/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/JPARR/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/JPARR/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	D:/Vivado/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/Vivado/ConfigurableEletronic/proj/FLP_proj/vivado.log
+Vivado journal file location: 	D:/Vivado/ConfigurableEletronic/proj/FLP_proj/vivado.jou
+Engine tmp dir: 	D:/Vivado/ConfigurableEletronic/proj/FLP_proj/.Xil/Vivado-15676-LAPTOP-771IFLK3
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Vivado/Vivado/2019.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: C:\Users\JPARR\AppData\Roaming\XilinxLicense\xilinx_ise.lic
+XILINX_DSP: D:/Vivado/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Vivado/Vivado/2019.2
+XILINX_VIVADO: D:/Vivado/Vivado/2019.2
+XILINX_VIVADO_HLS: D:/Vivado/Vivado/2019.2
+
+
+GUI allocated memory:	191 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 734 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: D:\Vivado\ConfigurableEletronic\proj\FLP_proj\FLP_proj.xpr. Version: Vivado v2019.2 
+// bB (cr):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/ricar/Desktop/EConfig/Trabalhos/proj/FLP_proj' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 115 MB (+118378kb) [00:00:09]
+// [Engine Memory]: 709 MB (+592439kb) [00:00:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  2846 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 765 MB. GUI used memory: 56 MB. Current time: 4/6/20, 8:09:14 PM BST
+// [Engine Memory]: 765 MB (+21088kb) [00:00:12]
+// Project name: FLP_proj; location: D:/Vivado/ConfigurableEletronic/proj/FLP_proj; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bB (cr)
+// [Engine Memory]: 824 MB (+22043kb) [00:00:14]
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (cr)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_rebuilt0dsp 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_rebuilt0dsp -jobs 6 
+// Tcl Message: [Mon Apr  6 20:09:46 2020] Launched synth_rebuilt0dsp... Run output will be captured here: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/synth_rebuilt0dsp/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 24 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cr)

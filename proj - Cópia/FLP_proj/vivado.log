@@ -1,0 +1,204 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Apr  6 20:10:19 2020
+# Process ID: 2056
+# Current directory: D:/Vivado/ConfigurableEletronic/proj/FLP_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14172 D:\Vivado\ConfigurableEletronic\proj\FLP_proj\FLP_proj.xpr
+# Log file: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/vivado.log
+# Journal file: D:/Vivado/ConfigurableEletronic/proj/FLP_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 750.645 ; gain = 79.953
+update_compile_order -fileset sources_1
+reset_run synth_2
+reset_run synth_rebuilt
+reset_run synth_rebuilt0dsp
+delete_runs "synth_2 synth_rebuilt"
+INFO: [Vivado 12-3261] Dependent run, 'impl_2', will be deleted with parent run, 'synth_2'.
+INFO: [Vivado 12-3261] Dependent run, 'impl_1', will be deleted with parent run, 'synth_rebuilt'.
+set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY none [get_runs synth_rebuilt0dsp]
+set_property -name STEPS.SYNTH_DESIGN.ARGS.MAX_DSP -value -1 -objects [get_runs synth_rebuilt0dsp]
+set_property STEPS.INIT_DESIGN.TCL.POST {} [get_runs impl_3]
+launch_runs synth_rebuilt0dsp -jobs 6
+[Mon Apr  6 20:19:36 2020] Launched synth_rebuilt0dsp...
+Run output will be captured here: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/synth_rebuilt0dsp/runme.log
+reset_run synth_rebuilt0dsp
+set_property name synth_deafault_none_default [get_runs synth_rebuilt0dsp]
+launch_runs synth_deafault_none_default -jobs 6
+[Mon Apr  6 20:20:33 2020] Launched synth_deafault_none_default...
+Run output will be captured here: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/synth_deafault_none_default/runme.log
+open_run synth_deafault_none_default -name synth_deafault_none_default
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3486.465 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test_timing.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test_timing.xdc:13]
+Finished Parsing XDC File [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test_timing.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3543.742 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 3543.742 ; gain = 100.613
+set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY full [get_runs synth_deafault_none_default]
+set_property strategy Flow_RuntimeOptimized [get_runs synth_deafault_none_default]
+set_property strategy {Vivado Synthesis Defaults} [get_runs synth_deafault_none_default]
+set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY full [get_runs synth_deafault_none_default]
+create_run synth_1 -flow {Vivado Synthesis 2019}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7a35tcpg236-1
+set_property name synth_default_full_deafault [get_runs synth_1]
+set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY full [get_runs synth_default_full_deafault]
+current_run [get_runs synth_default_full_deafault]
+launch_runs synth_default_full_deafault -jobs 6
+[Mon Apr  6 20:26:19 2020] Launched synth_default_full_deafault...
+Run output will be captured here: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/synth_default_full_deafault/runme.log
+create_run synth_default_rebuilt_default -flow {Vivado Synthesis 2019}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7a35tcpg236-1
+current_run [get_runs synth_default_rebuilt_default]
+launch_runs synth_default_rebuilt_default -jobs 6
+[Mon Apr  6 20:30:21 2020] Launched synth_default_rebuilt_default...
+Run output will be captured here: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/synth_default_rebuilt_default/runme.log
+open_run synth_default_rebuilt_default -name synth_default_rebuilt_default
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3819.594 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test_timing.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test_timing.xdc:13]
+Finished Parsing XDC File [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test_timing.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3882.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3934.195 ; gain = 131.020
+create_run synth_AreaHigh -flow {Vivado Synthesis 2019} -strategy Flow_AreaOptimized_high
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7a35tcpg236-1
+current_run [get_runs synth_AreaHigh]
+create_run synth_AreaMedium -flow {Vivado Synthesis 2019} -strategy Flow_AreaOptimized_medium
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7a35tcpg236-1
+create_run synth_AlternateRout -flow {Vivado Synthesis 2019} -strategy Flow_AreaMultThresholdDSP
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7a35tcpg236-1
+create_run synth_PerfHigh -flow {Vivado Synthesis 2019} -strategy Flow_AlternateRoutability
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7a35tcpg236-1
+create_run synth_PerfTHresCarry -flow {Vivado Synthesis 2019} -strategy Flow_PerfOptimized_high
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7a35tcpg236-1
+create_run synth_RunTOpt -flow {Vivado Synthesis 2019} -strategy Flow_PerfThresholdCarry
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7a35tcpg236-1
+create_run synth_8 -flow {Vivado Synthesis 2019} -strategy Flow_RuntimeOptimized
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7a35tcpg236-1
+create_run synth_default_0DSP -flow {Vivado Synthesis 2019}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7a35tcpg236-1
+set_property STEPS.SYNTH_DESIGN.ARGS.MAX_DSP 0 [get_runs synth_default_0DSP]
+launch_runs synth_AreaHigh -jobs 12
+[Mon Apr  6 20:45:15 2020] Launched synth_AreaHigh...
+Run output will be captured here: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/synth_AreaHigh/runme.log
+current_run [get_runs synth_AlternateRout]
+launch_runs synth_AlternateRout -jobs 12 -scripts_only
+launch_runs synth_AreaMedium synth_default_0DSP -jobs 12
+[Mon Apr  6 21:00:19 2020] Launched synth_AreaMedium, synth_default_0DSP...
+Run output will be captured here:
+synth_AreaMedium: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/synth_AreaMedium/runme.log
+synth_default_0DSP: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/synth_default_0DSP/runme.log
+launch_runs synth_8 synth_PerfHigh synth_PerfTHresCarry synth_RunTOpt -jobs 12
+[Mon Apr  6 21:00:49 2020] Launched synth_8, synth_PerfHigh, synth_PerfTHresCarry, synth_RunTOpt...
+Run output will be captured here:
+synth_8: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/synth_8/runme.log
+synth_PerfHigh: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/synth_PerfHigh/runme.log
+synth_PerfTHresCarry: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/synth_PerfTHresCarry/runme.log
+synth_RunTOpt: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/synth_RunTOpt/runme.log
+current_run [get_runs synth_PerfTHresCarry]
+current_design synth_deafault_none_default
+close_design
+close_design
+open_run synth_PerfTHresCarry -name synth_PerfTHresCarry
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3944.441 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test_timing.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test_timing.xdc:13]
+Finished Parsing XDC File [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test_timing.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3944.441 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test_timing.xdc:13]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+set_property strategy Congestion_SpreadLogic_low [get_runs impl_6]
+set_property strategy Flow_Quick [get_runs impl_4]
+create_run impl_7 -parent_run synth_PerfTHresCarry -flow {Vivado Implementation 2019} -strategy Performance_HighUtilSLRs -report_strategy {UltraFast Design Methodology Reports}
+Run is defaulting to parent run srcset: sources_1
+Run is defaulting to parent run constrset: constrs_1
+Run is defaulting to parent run part: xc7a35tcpg236-1
+current_run [get_runs impl_7]
+launch_runs impl_7 -jobs 6
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3944.441 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+[Mon Apr  6 21:09:12 2020] Launched impl_7...
+Run output will be captured here: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.runs/impl_7/runme.log
+current_run [get_runs synth_PerfHigh]
+close_design
+open_run synth_PerfHigh -name synth_PerfHigh
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3944.441 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test_timing.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test_timing.xdc:13]
+Finished Parsing XDC File [D:/Vivado/ConfigurableEletronic/proj/P1_Sources/fir8_test_timing.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3944.441 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+reset_run impl_7
+delete_runs "impl_7"
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  6 21:10:20 2020...

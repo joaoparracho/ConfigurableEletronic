@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Apr  6 20:10:19 2020
+# Process ID: 2056
+# Current directory: D:/Vivado/ConfigurableEletronic/proj/FLP_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14172 D:\Vivado\ConfigurableEletronic\proj\FLP_proj\FLP_proj.xpr
+# Log file: D:/Vivado/ConfigurableEletronic/proj/FLP_proj/vivado.log
+# Journal file: D:/Vivado/ConfigurableEletronic/proj/FLP_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/ConfigurableEletronic/proj/FLP_proj/FLP_proj.xpr
+update_compile_order -fileset sources_1
+reset_run synth_2
+reset_run synth_rebuilt
+reset_run synth_rebuilt0dsp
+delete_runs "synth_2 synth_rebuilt"
+set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY none [get_runs synth_rebuilt0dsp]
+set_property -name STEPS.SYNTH_DESIGN.ARGS.MAX_DSP -value -1 -objects [get_runs synth_rebuilt0dsp]
+set_property STEPS.INIT_DESIGN.TCL.POST {} [get_runs impl_3]
+launch_runs synth_rebuilt0dsp -jobs 6
+wait_on_run synth_rebuilt0dsp
+reset_run synth_rebuilt0dsp
+set_property name synth_deafault_none_default [get_runs synth_rebuilt0dsp]
+launch_runs synth_deafault_none_default -jobs 6
+wait_on_run synth_deafault_none_default
+open_run synth_deafault_none_default -name synth_deafault_none_default
+set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY full [get_runs synth_deafault_none_default]
+set_property strategy Flow_RuntimeOptimized [get_runs synth_deafault_none_default]
+set_property strategy {Vivado Synthesis Defaults} [get_runs synth_deafault_none_default]
+set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY full [get_runs synth_deafault_none_default]
+create_run synth_1 -flow {Vivado Synthesis 2019}
+set_property name synth_default_full_deafault [get_runs synth_1]
+set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY full [get_runs synth_default_full_deafault]
+current_run [get_runs synth_default_full_deafault]
+launch_runs synth_default_full_deafault -jobs 6
+wait_on_run synth_default_full_deafault
+create_run synth_default_rebuilt_default -flow {Vivado Synthesis 2019}
+current_run [get_runs synth_default_rebuilt_default]
+launch_runs synth_default_rebuilt_default -jobs 6
+wait_on_run synth_default_rebuilt_default
+open_run synth_default_rebuilt_default -name synth_default_rebuilt_default
+create_run synth_AreaHigh -flow {Vivado Synthesis 2019} -strategy Flow_AreaOptimized_high
+current_run [get_runs synth_AreaHigh]
+create_run synth_AreaMedium -flow {Vivado Synthesis 2019} -strategy Flow_AreaOptimized_medium
+create_run synth_AlternateRout -flow {Vivado Synthesis 2019} -strategy Flow_AreaMultThresholdDSP
+create_run synth_PerfHigh -flow {Vivado Synthesis 2019} -strategy Flow_AlternateRoutability
+create_run synth_PerfTHresCarry -flow {Vivado Synthesis 2019} -strategy Flow_PerfOptimized_high
+create_run synth_RunTOpt -flow {Vivado Synthesis 2019} -strategy Flow_PerfThresholdCarry
+create_run synth_8 -flow {Vivado Synthesis 2019} -strategy Flow_RuntimeOptimized
+create_run synth_default_0DSP -flow {Vivado Synthesis 2019}
+set_property STEPS.SYNTH_DESIGN.ARGS.MAX_DSP 0 [get_runs synth_default_0DSP]
+launch_runs synth_AreaHigh -jobs 12
+wait_on_run synth_AreaHigh
+current_run [get_runs synth_AlternateRout]
+launch_runs synth_AlternateRout -jobs 12 -scripts_only
+wait_on_run synth_AlternateRout
+launch_runs synth_AreaMedium synth_default_0DSP -jobs 12
+wait_on_run synth_AreaMedium
+wait_on_run synth_default_0DSP
+launch_runs synth_8 synth_PerfHigh synth_PerfTHresCarry synth_RunTOpt -jobs 12
+wait_on_run synth_8
+wait_on_run synth_PerfHigh
+wait_on_run synth_PerfTHresCarry
+wait_on_run synth_RunTOpt
+current_run [get_runs synth_PerfTHresCarry]
+current_design synth_deafault_none_default
+close_design
+close_design
+open_run synth_PerfTHresCarry -name synth_PerfTHresCarry
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+set_property strategy Congestion_SpreadLogic_low [get_runs impl_6]
+set_property strategy Flow_Quick [get_runs impl_4]
+create_run impl_7 -parent_run synth_PerfTHresCarry -flow {Vivado Implementation 2019} -strategy Performance_HighUtilSLRs -report_strategy {UltraFast Design Methodology Reports}
+current_run [get_runs impl_7]
+launch_runs impl_7 -jobs 6
+wait_on_run impl_7
+current_run [get_runs synth_PerfHigh]
+close_design
+open_run synth_PerfHigh -name synth_PerfHigh
+reset_run impl_7
+delete_runs "impl_7"

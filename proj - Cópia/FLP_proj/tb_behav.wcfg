@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fir8_test_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fir8_test_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="28533241fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="134"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wave_markers>
+      <marker time="406234934" label="" />
+      <marker time="523546" label="" />
+   </wave_markers>
+   <wvobject fp_name="/fir8_test_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir8_test_tb/rstb" type="logic">
+      <obj_property name="ElementShortName">rstb</obj_property>
+      <obj_property name="ObjectShortName">rstb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir8_test_tb/sync_reset" type="logic">
+      <obj_property name="ElementShortName">sync_reset</obj_property>
+      <obj_property name="ObjectShortName">sync_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir8_test_tb/dut/addr_fcw" type="array">
+      <obj_property name="ElementShortName">addr_fcw[1:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_fcw[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir8_test_tb/addr_phase" type="array">
+      <obj_property name="ElementShortName">addr_phase[1:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_phase[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir8_test_tb/sine_out" type="array">
+      <obj_property name="ElementShortName">sine_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sine_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir8_test_tb/sine_in" type="array">
+      <obj_property name="ElementShortName">sine_in[13:0]</obj_property>
+      <obj_property name="ObjectShortName">sine_in[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir8_test_tb/dut/sine_in" type="array">
+      <obj_property name="ElementShortName">sine_in[13:0]</obj_property>
+      <obj_property name="ObjectShortName">sine_in[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">-2440.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">174.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir8_test_tb/dut/sine_out" type="array">
+      <obj_property name="ElementShortName">sine_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sine_out[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir8_test_tb/dut/fcw" type="array">
+      <obj_property name="ElementShortName">fcw[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fcw[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir8_test_tb/addr_fcw" type="array">
+      <obj_property name="ElementShortName">addr_fcw[1:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_fcw[1:0]</obj_property>
+   </wvobject>
+</wave_config>
